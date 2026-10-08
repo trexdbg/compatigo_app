@@ -1,34 +1,3252 @@
 {
-  "updated_at": "2026-10-08",
-  "status": "demonstration",
+  "schema_version": 1,
+  "updated_at": "2026-10-08T11:29:45.309605+00:00",
+  "status": "verified_catalog",
   "devices": [
     {
       "brand": "Rowenta",
-      "model": "RO7649EA",
+      "model": "ROWENTA",
       "type": "Aspirateur",
-      "verified": false,
-      "parts": []
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "FS-9100037984",
+          "consumable_name": "Filtre FS-9100037984 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-fs-9100037984/a/9100037984",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre FS-9100037984 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:06.069463+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:35.268791+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-2230002150",
+          "consumable_name": "Filtre mousse RS-2230002150 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-2230002150/a/2230002150",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-2230002150 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:15.816116+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-RT900736",
+          "consumable_name": "Filtre mousse RS-RT900736 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-rt900736/a/2230000513",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-RT900736 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:25.629535+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "SS-7222060695",
+          "consumable_name": "Filtre séparateur SS-7222060695 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7222060695/a/7222060695",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:56.339437+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:57.420302+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:47.755591+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:26.405886+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:36.327820+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:37.861378+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:07.269742+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:27.780023+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:17.884391+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:48.817547+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR780000",
+          "consumable_name": "Kit de filtration ZR780000 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr780000/csp/2211401012",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR780000 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:46.302457+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:16.692785+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.168074+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:58.584876+00:00"
+            }
+          ]
+        }
+      ]
     },
     {
-      "brand": "Levoit",
-      "model": "Core 300",
-      "type": "Purificateur d’air",
-      "verified": false,
-      "parts": []
-    },
-    {
-      "brand": "Philips",
-      "model": "AC1214/10",
-      "type": "Purificateur d’air",
-      "verified": false,
-      "parts": []
-    },
-    {
-      "brand": "Dyson",
-      "model": "V8 Absolute",
+      "brand": "Rowenta",
+      "model": "ROBOTS",
       "type": "Aspirateur",
-      "verified": false,
-      "parts": []
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "FS-9100037984",
+          "consumable_name": "Filtre FS-9100037984 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-fs-9100037984/a/9100037984",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre FS-9100037984 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:06.210780+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:35.407838+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-2230002150",
+          "consumable_name": "Filtre mousse RS-2230002150 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-2230002150/a/2230002150",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-2230002150 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:15.901969+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-RT900736",
+          "consumable_name": "Filtre mousse RS-RT900736 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-rt900736/a/2230000513",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-RT900736 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:25.716568+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "SS-7222060695",
+          "consumable_name": "Filtre séparateur SS-7222060695 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7222060695/a/7222060695",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:56.424331+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:57.507584+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:47.844094+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:26.495414+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:36.416601+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:37.951485+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:07.396041+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:27.873309+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:18.017577+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:48.909883+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR780000",
+          "consumable_name": "Kit de filtration ZR780000 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr780000/csp/2211401012",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR780000 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:46.393481+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:16.823102+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.256789+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:58.672630+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "MOUSSE",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "RS-2230002150",
+          "consumable_name": "Filtre mousse RS-2230002150 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-2230002150/a/2230002150",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-2230002150 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:15.988779+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-RT900736",
+          "consumable_name": "Filtre mousse RS-RT900736 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-rt900736/a/2230000513",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-RT900736 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:25.803218+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "SS-7222060695",
+          "consumable_name": "Filtre séparateur SS-7222060695 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7222060695/a/7222060695",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:56.509760+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:26.586051+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:38.039609+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:27.964797+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:18.108120+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.345706+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "MOTEUR",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "FS-9100037984",
+          "consumable_name": "Filtre FS-9100037984 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-fs-9100037984/a/9100037984",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre FS-9100037984 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:06.376504+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:35.580112+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "RS-2230002150",
+          "consumable_name": "Filtre mousse RS-2230002150 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-2230002150/a/2230002150",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-2230002150 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:16.075648+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "SS-7222060695",
+          "consumable_name": "Filtre séparateur SS-7222060695 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7222060695/a/7222060695",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:56.593796+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:57.733063+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:38.129353+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:28.054874+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:18.198292+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:49.092478+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR780000",
+          "consumable_name": "Kit de filtration ZR780000 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr780000/csp/2211401012",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR780000 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:46.572890+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.435034+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7640EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.560652+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "YY5467FE",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.652346+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "YY4560FE",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.741479+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7649EAR",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.830757+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7961EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:08.920476+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7933EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:09.007398+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7954EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:09.146442+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7935EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:09.235499+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7936EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903701",
+          "consumable_name": "Kit de filtration ZR903701 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr903701/csp/1600005409",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR903701 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:09.323322+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2957EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:59.822623+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2940EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:59.911279+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2917EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:59.999214+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2915EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:00.086912+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2910EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:00.174812+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2913EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:00.294627+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2933EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:00.381028+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO2985EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR904301",
+          "consumable_name": "Système de filtration ZR904301 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr904301/a/1600005144",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR904301 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:00.467546+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "MOINDRE",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:19.979759+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "ROBINET",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.069849+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "MOYENNE",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:59.627124+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:49.958948+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:40.096621+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:09.453477+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.160606+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH2037WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:30.156320+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.250234+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH2038WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:30.246255+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.339830+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH2036WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:30.383629+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.430048+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH2039WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.578582+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7A32E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.668460+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7A36E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.757289+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7L35E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.846624+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7A35E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:20.935644+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7A73E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009012",
+          "consumable_name": "Filtre après moteur ZR009012 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009012/a/7222068977",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après moteur ZR009012 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:21.060745+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9A73WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.103621+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9AD1WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.191582+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9L42WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.279286+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9A46WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.367007+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9LC0WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.458195+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9A32WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.582044+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9A30WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.677172+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9A36WV",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.765960+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9A76E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009015",
+          "consumable_name": "Filtre après-moteur ZR009015 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-apres-moteur-zr009015/a/2211401301",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre après-moteur ZR009015 | Rowenta",
+              "retrieved_at": "2026-10-08T11:26:52.856049+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO1671FA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:01.502706+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO162011",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:01.591504+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO1660FA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:01.679131+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO167111",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR002101",
+          "consumable_name": "Filtre haute performance ZR002101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr002101/a/1600005399",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR002101 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:01.766918+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH2079WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:32.320616+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6A71WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:32.445218+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6A37WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:32.537588+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6A82WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:32.629542+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH2077WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:32.721099+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH20C2WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009010",
+          "consumable_name": "Filtre mousse ZR009010 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009010/csp/7222069014",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse ZR009010 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:32.811220+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9086WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:42.960944+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9037WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.052971+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9081WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.143966+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7331WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.233345+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7324WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.321916+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9089WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.461499+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9051WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.551787+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7329WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009001",
+          "consumable_name": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-zr009001/a/2211400347",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:43.641896+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "MOINDRES",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:53.514389+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6974WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:53.603207+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7233WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:53.690807+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6933WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:53.777503+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6921WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:53.865132+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6973WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:54.007016+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH7221WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:54.094577+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6972WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:54.182085+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6985WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:54.269502+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH6971WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005202",
+          "consumable_name": "Filtre lavable ZR005202 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-lavable-zr005202/a/2211400546",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre lavable ZR005202 | Rowenta",
+              "retrieved_at": "2026-10-08T11:27:54.356624+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9574WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:13.809176+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9571WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:13.894586+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9572WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:13.978259+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH9590WO",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009003",
+          "consumable_name": "Filtre séparateur ZR009003 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009003/csp/2211400743",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009003 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:14.112495+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C32EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:43.647349+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C30EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:43.735011+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C36EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:42.508890+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:43.822494+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C66EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:43.966113+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C89EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:44.057771+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C71EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:44.147999+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7B11EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:42.900827+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:44.237395+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7C19EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:42.987026+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:44.325032+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7B13EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "RS-2230000345",
+          "consumable_name": "Filtre aspirateur RS-2230000345 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-aspirateur-rs-2230000345/a/2230000345",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:43.071693+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR006001",
+          "consumable_name": "Kit de filtration ZR006001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr006001/csp/2211400056",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR006001 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:44.412647+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO6799EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:24.690131+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO6702EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:24.781274+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO6743EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:24.869702+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO6712EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:24.957159+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO6723PA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:25.043408+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO6723PB",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902601",
+          "consumable_name": "Système de filtration ZR902601 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/systeme-de-filtration-zr902601/a/1600005405",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Système de filtration ZR902601 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:25.129579+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3721EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.165790+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3726EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.251711+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3725EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.382582+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3753EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "RS-RT900736",
+          "consumable_name": "Filtre mousse RS-RT900736 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-mousse-rs-rt900736/a/2230000513",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre mousse RS-RT900736 | Rowenta",
+              "retrieved_at": "2026-10-08T11:29:34.411676+00:00"
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.472131+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3733EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.563378+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3716EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.653867+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3740",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.744059+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3745EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.832845+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3761EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:35.985247+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO3718EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR005901",
+          "consumable_name": "Kit de filtration ZR005901 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr005901/a/2210019385",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR005901 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:36.075428+00:00"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO4823EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR780000",
+          "consumable_name": "Kit de filtration ZR780000 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/kit-de-filtration-zr780000/csp/2211401012",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Kit de filtration ZR780000 | Rowenta",
+              "retrieved_at": "2026-10-08T11:28:56.087536+00:00"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
