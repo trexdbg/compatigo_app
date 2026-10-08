@@ -1,0 +1,56 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { brandPath, devicePath, publishedBrands, publishedDevices, sitePath, slug, verifiedParts } from "../../lib/catalog";
+
+export function getStaticPaths() {
+  return publishedBrands().map((brand) => ({
+    params: { brand: slug(brand.name) },
+    props: { brand },
+  }));
+}
+
+const { brand } = Astro.props as { brand: { name: string; count: number } };
+const devices = publishedDevices().filter((d) => d.brand === brand.name);
+const title = "Filtres et consommables " + brand.name + " : modèles vérifiés | Compatigo";
+const description = "Consultez les références d'appareils " + brand.name +
+  " pour lesquels Compatigo dispose de correspondances fabricant vérifiées et de sources consultables.";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: new URL(sitePath(), Astro.site).href },
+        { "@type": "ListItem", position: 2, name: "Catalogue", item: new URL(sitePath("appareils/"), Astro.site).href },
+        { "@type": "ListItem", position: 3, name: brand.name, item: Astro.url.href },
+      ],
+    },
+    { "@type": "CollectionPage", name: title, description, url: Astro.url.href },
+  ],
+};
+---
+<Layout title={title} description={description} structuredData={structuredData}>
+  <header class="header"><div class="wrap"><a href={sitePath()} class="logo">compatigo<span>.</span></a><a class="search" href={sitePath("#rechercher")}>Rechercher une référence ↗</a></div></header>
+  <main class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href={sitePath()}>Accueil</a> / <a href={sitePath("appareils/")}>Catalogue</a> / <span aria-current="page">{brand.name}</span></nav>
+    <section class="hero"><span class="kicker">CATALOGUE DE COMPATIBILITÉS VÉRIFIÉES</span><h1>{brand.name}<br/><em>Les modèles référencés.</em></h1>
+      <p>Retrouvez les appareils {brand.name} disposant d'au moins une correspondance consommable confirmée par une source constructeur. Cliquez sur votre référence exacte pour voir les filtres et leurs preuves.</p>
+      <div class="count"><strong>{devices.length}</strong><span>appareils référencés</span></div>
+    </section>
+    <section aria-labelledby="devices-title" class="list"><h2 id="devices-title">Choisissez votre appareil</h2>
+      <div class="device-grid">{devices.map((device) => (
+        <a class="device" href={devicePath(device)}>
+          <span class="type">{device.type || "Appareil"}</span>
+          <strong>{device.model}</strong>
+          <span class="parts">{verifiedParts(device).map((part) => part.manufacturer_part_number).join(" · ")}</span>
+          <span class="detail">Voir les références et les preuves ↗</span>
+        </a>
+      ))}</div>
+    </section>
+    <div class="back"><a href={sitePath("appareils/")}>← Toutes les marques</a><a href={sitePath("#rechercher")}>Rechercher un appareil →</a></div>
+  </main>
+  <footer><div class="wrap">Compatigo · Le bon consommable, pour le bon appareil.</div></footer>
+</Layout>
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;color:#173139;background:#f9fbf9;font-family:"DM Sans",sans-serif}:global(h1),:global(h2){font-family:Manrope,sans-serif}:global(a){color:inherit}.wrap{max-width:1100px;width:calc(100% - 44px);margin:auto}.header{background:white;border-bottom:1px solid #e4ede8}.header .wrap{height:77px;display:flex;align-items:center;justify-content:space-between}.logo{text-decoration:none;font:800 24px Manrope,sans-serif;letter-spacing:-1.4px}.logo span{color:#30b48c}.search{text-decoration:none;font-size:12px;font-weight:800;border:1px solid #dcebe2;padding:12px;border-radius:9px;color:#228467}.crumbs{display:flex;flex-wrap:wrap;gap:12px;margin:29px 0 48px;color:#6f847b;font-size:12px}.hero{padding:10px 0 50px}.kicker{font-weight:800;font-size:10px;letter-spacing:1.4px;color:#2a9a78}.hero h1{margin:17px 0 20px;font-size:clamp(40px,6vw,68px);line-height:1.17;letter-spacing:-3px}.hero h1 em{font-style:normal;color:#2ba37d}.hero p{max-width:750px;color:#667e72;font-size:16px;line-height:1.8}.count{display:flex;gap:14px;align-items:center;border-top:1px solid #dceae1;border-bottom:1px solid #dceae1;padding:22px 0;margin-top:35px}.count strong{font:800 29px Manrope,sans-serif}.count span{font-size:12px;color:#738a7e}.list{margin:15px 0 80px}.list h2{font-size:28px;letter-spacing:-.8px;margin-bottom:25px}.device-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.device{display:flex;flex-direction:column;min-height:180px;background:white;padding:23px;border:1px solid #e1ebe5;border-radius:12px;text-decoration:none;transition:border-color .15s,transform .15s}.device:hover{transform:translateY(-2px);border-color:#40b58b}.type{font-size:10px;color:#719085;text-transform:uppercase;letter-spacing:1px}.device strong{font:800 22px Manrope,sans-serif;margin:9px 0}.parts{font-size:12px;color:#61786e;line-height:1.6;overflow-wrap:anywhere}.detail{font-size:11px;color:#218565;font-weight:800;margin-top:auto;padding-top:15px}.back{display:flex;flex-wrap:wrap;gap:15px;justify-content:space-between;margin:60px 0}.back a{font-size:13px;font-weight:800;color:#248568;text-decoration:none}footer{background:#19343d;color:#e4f5ea;padding:35px 0;font-size:12px}@media(max-width:800px){.device-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:550px){.device-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1.5px}.hero p{font-size:14px}}
+</style>
