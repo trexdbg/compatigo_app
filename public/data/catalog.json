@@ -1,0 +1,34 @@
+{
+  "updated_at": "2026-10-08",
+  "status": "demonstration",
+  "devices": [
+    {
+      "brand": "Rowenta",
+      "model": "RO7649EA",
+      "type": "Aspirateur",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Levoit",
+      "model": "Core 300",
+      "type": "Purificateur d’air",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Philips",
+      "model": "AC1214/10",
+      "type": "Purificateur d’air",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Dyson",
+      "model": "V8 Absolute",
+      "type": "Aspirateur",
+      "verified": false,
+      "parts": []
+    }
+  ]
+}
