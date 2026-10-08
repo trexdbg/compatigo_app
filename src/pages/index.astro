@@ -23,6 +23,7 @@ import Layout from "../layouts/Layout.astro";
   const searchBtn=document.querySelector<HTMLButtonElement>('#search-button');
   let devices:Device[]=[];
   let loaded=false;
+  let selectedModel='';
   const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]/g,'');
   const esc=(s:string)=>s.replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]??ch));
   const valid=(d:Device)=>/[0-9]/.test(d.model)&&normalize(d.model)!==normalize(d.brand);
@@ -44,22 +45,26 @@ import Layout from "../layouts/Layout.astro";
     results.hidden=false;input.setAttribute('aria-expanded','true');
     if(!loaded){results.textContent='Chargement du catalogue…';return}
     const tokens=raw.split(/\s+/).map(normalize).filter(Boolean);
-    const matches=devices.filter(valid).map(d=>({d,s:score(d,q,tokens)})).filter(x=>x.s>0).sort((a,b)=>b.s-a.s||a.d.model.localeCompare(b.d.model)).slice(0,12);
+    const allMatches=devices.filter(valid).map(d=>({d,s:score(d,q,tokens)})).filter(x=>x.s>0).sort((a,b)=>b.s-a.s||a.d.model.localeCompare(b.d.model));
+    const matches=allMatches.slice(0,12);
+    if(!matches.some(x=>x.d.model===selectedModel))selectedModel=allMatches.length===1?allMatches[0].d.model:'';
     if(!matches.length){
       results.innerHTML='<div class="result-card"><strong>Aucun appareil correspondant dans le catalogue</strong><p>Essayez uniquement le code inscrit sur l’étiquette (par exemple RO7640EA). Une absence de résultat ne signifie pas que votre appareil est incompatible : il n’est peut-être pas encore référencé.</p></div>';
       return;
     }
-    results.innerHTML='<p class="results-count">'+matches.length+' appareil'+(matches.length>1?'s':'')+' trouvé'+(matches.length>1?'s':'')+'</p>'+matches.map(({d})=>{
+    results.innerHTML='<p class="results-count">'+allMatches.length+' appareil'+(allMatches.length>1?'s':'')+' trouvé'+(allMatches.length>1?'s':'')+(allMatches.length>12?' · 12 premiers affichés':'')+'</p>'+matches.map(({d})=>{
       const parts=verified(d);
+      const expanded=d.model===selectedModel;
       const refs=parts.length?'<div class="parts-list">'+parts.map(p=>{
         const url=p.evidence?.find(e=>{try{return new URL(e.source_url).protocol==='https:'}catch{return false}})?.source_url;
         return '<div class="part-row"><span><b>'+esc(p.manufacturer_part_number)+'</b><small>'+esc(p.consumable_name??p.consumable_type??'Consommable')+'</small></span>'+(url?'<a href="'+esc(url)+'" target="_blank" rel="noopener noreferrer">Preuve constructeur ↗</a>':'')+'</div>';
       }).join('')+'</div>':'<p>Aucune pièce vérifiée pour cet appareil.</p>';
-      return '<article class="result-card"><div class="result-heading"><strong>'+esc(d.brand)+' '+esc(d.model)+'</strong><span class="verified-label">'+parts.length+' pièce'+(parts.length>1?'s':'')+' vérifiée'+(parts.length>1?'s':'')+'</span></div><p>'+esc(d.type??'Appareil')+'</p>'+refs+'</article>';
+      return '<article class="result-card"><button type="button" class="device-toggle" data-model="'+esc(d.model)+'" aria-expanded="'+expanded+'"><span class="device-info"><strong>'+esc(d.brand)+' '+esc(d.model)+'</strong><small>'+esc(d.type??'Appareil')+'</small></span><span class="device-meta"><span class="verified-label">'+parts.length+' pièce'+(parts.length>1?'s':'')+' vérifiée'+(parts.length>1?'s':'')+'</span><span class="device-chevron">'+(expanded?'−':'+')+'</span></span></button>'+(expanded?refs:'')+'</article>';
     }).join('');
+    results.querySelectorAll<HTMLButtonElement>('[data-model]').forEach(button=>button.addEventListener('click',()=>{selectedModel=selectedModel===button.dataset.model?'':button.dataset.model??'';search()}));
   }
   fetch(import.meta.env.BASE_URL+'data/catalog.json').then(r=>{if(!r.ok)throw new Error('Catalogue indisponible');return r.json()}).then(data=>{devices=Array.isArray(data.devices)?data.devices:[];loaded=true;search()}).catch(()=>{loaded=true;if(results){results.hidden=false;results.textContent='Le catalogue est temporairement indisponible. Réessayez plus tard.'}});
-  input?.addEventListener('input',search);
+  input?.addEventListener('input',()=>{selectedModel='';search()});
   input?.addEventListener('keydown',e=>{if(e.key==='Escape'){input.value='';search()}});
   searchBtn?.addEventListener('click',search);
   document.querySelectorAll<HTMLButtonElement>('[data-query]').forEach(button=>button.addEventListener('click',()=>{if(input){input.value=button.dataset.query??'';search();input.focus()}}));
@@ -74,4 +79,25 @@ import Layout from "../layouts/Layout.astro";
   .part-row b{font-size:13px}
   .part-row small{font-size:11px;color:#647b72}
   .part-row a{font-size:11px}
+</style>
+
+<style is:global>
+  #results .results-count{margin:4px 0 14px;color:#687d78;font-size:12px;line-height:1.5}
+  #results .result-card{display:block;background:#fff;border:1px solid #e2ece7;border-radius:10px;padding:0;margin:0 0 9px;overflow:hidden;box-shadow:0 2px 9px #16392b08}
+  #results .device-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;text-align:left;background:transparent;border:0;padding:14px 15px;color:#20343a}
+  #results .device-toggle:hover,#results .device-toggle:focus-visible{background:#f1f9f4;outline-offset:-3px}
+  #results .device-info{display:flex;flex-direction:column;gap:4px;min-width:0}
+  #results .device-info strong{font-size:14px;line-height:1.4;overflow-wrap:anywhere}
+  #results .device-info small{font-size:11px;color:#7b8e88}
+  #results .device-meta{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  #results .verified-label{white-space:nowrap;font-size:10px;color:#157452;background:#e0f5e9;padding:5px 8px;border-radius:20px;font-weight:700}
+  #results .device-chevron{display:grid;place-items:center;border-radius:50%;background:#edf5ef;width:25px;height:25px;color:#267f63;font-weight:800;font-size:17px}
+  #results .parts-list{margin:0 15px 13px;border-top:1px solid #e2ece7}
+  #results .part-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #edf2ee;flex-wrap:wrap}
+  #results .part-row:last-child{border-bottom:0}
+  #results .part-row span{display:flex;flex-direction:column;gap:5px;min-width:0;flex:1 1 180px}
+  #results .part-row b{font-size:13px;line-height:1.4;overflow-wrap:anywhere}
+  #results .part-row small{font-size:11px;line-height:1.5;color:#6e807b}
+  #results .part-row a{font-size:11px;line-height:1.5;color:#188367;text-decoration:underline;text-underline-offset:3px;white-space:normal}
+  @media(max-width:500px){#results .device-toggle{align-items:flex-start}#results .device-meta{flex-direction:column-reverse;align-items:flex-end;gap:6px}#results .verified-label{font-size:9px}}
 </style>
