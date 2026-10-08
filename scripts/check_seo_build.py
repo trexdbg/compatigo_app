@@ -100,7 +100,7 @@ def main() -> None:
         if parser.h1s != 1:
             raise AssertionError(f"Expected one H1 at {url}: {parser.h1s}")
 
-        if relative and not relative.startswith(("appareils/", "marques/")):
+        if relative and relative != "appareils" and not relative.startswith("marques/"):
             if not parser.scripts:
                 raise AssertionError(f"Missing JSON-LD for device {url}")
             graph = parser.scripts[0].get("@graph", [])
