@@ -1,0 +1,150 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  brandPath, catalogDate, devicePath, officialProofs, publishedDevices,
+  slug, sitePath, verifiedParts, type Device,
+} from "../../lib/catalog";
+
+export function getStaticPaths() {
+  const used = new Set<string>();
+  return publishedDevices().map((device) => {
+    const path = slug(device.brand) + "/" + slug(device.model);
+    if (used.has(path)) throw new Error("Duplicate device URL: " + path);
+    used.add(path);
+    return {
+      params: { brand: slug(device.brand), model: slug(device.model) },
+      props: { device },
+    };
+  });
+}
+
+const { device } = Astro.props as { device: Device };
+const parts = verifiedParts(device);
+const name = device.brand + " " + device.model;
+const title = "Filtre " + name + " : " + parts.map((p) => p.manufacturer_part_number).join(", ") + " | Compatigo";
+const description = "Consommables compatibles avec " + name + " : références " +
+  parts.map((p) => p.manufacturer_part_number).join(", ") +
+  ". Sources constructeur et preuves de compatibilité consultables.";
+const url = Astro.url.href;
+const homepage = new URL(sitePath(), Astro.site).href;
+const brandUrl = new URL(brandPath(device.brand), Astro.site).href;
+const related = publishedDevices()
+  .filter((other) => other.brand === device.brand && other.model !== device.model)
+  .filter((other) => verifiedParts(other).some((p) =>
+    parts.some((part) => part.manufacturer_part_number === p.manufacturer_part_number)))
+  .slice(0, 8);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: homepage },
+        { "@type": "ListItem", position: 2, name: device.brand, item: brandUrl },
+        { "@type": "ListItem", position: 3, name, item: url },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      name: title,
+      description,
+      url,
+      inLanguage: "fr-FR",
+      about: {
+        "@type": "Product",
+        name,
+        model: device.model,
+        brand: { "@type": "Brand", name: device.brand },
+        category: device.type || "Appareil",
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: parts.map((part, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: part.manufacturer_part_number,
+          url: officialProofs(part)[0].source_url,
+        })),
+      },
+    },
+  ],
+};
+---
+<Layout title={title} description={description} structuredData={structuredData}>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href={sitePath()} aria-label="Compatigo, retour à l’accueil"><span class="logo-mark">c✓</span>compatigo<span class="dot">.</span></a>
+      <a class="nav-action" href={sitePath("#rechercher")}>Nouvelle recherche ↗</a>
+    </div>
+  </header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+      <a href={sitePath()}>Accueil</a><span aria-hidden="true">/</span>
+      <a href={brandPath(device.brand)}>{device.brand}</a><span aria-hidden="true">/</span>
+      <span aria-current="page">{device.model}</span>
+    </nav>
+    <section class="intro">
+      <div class="kicker"><span class="green-dot"></span> CORRESPONDANCES SOURCÉES</div>
+      <h1>Les filtres compatibles avec <em>{name}</em></h1>
+      <p>Voici les références de consommables reliées à votre {device.type?.toLowerCase() || "appareil"} dans les listes officielles du fabricant. Chaque correspondance possède un lien vers sa source.</p>
+      <div class="summary">
+        <div><strong>{parts.length}</strong><span>référence{parts.length > 1 ? "s" : ""} vérifiée{parts.length > 1 ? "s" : ""}</span></div>
+        <div><strong>{device.model}</strong><span>référence de l’appareil</span></div>
+        <div class="stamp">✓ Données constructeur</div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="parts-title">
+      <div class="section-heading">
+        <div><span class="eyebrow">01 / CONSOMMABLES</span><h2 id="parts-title">Les bonnes références</h2></div>
+        <p>Les liens « Vérifier chez le fabricant » ouvrent la fiche officielle utilisée pour établir la compatibilité.</p>
+      </div>
+      <div class="parts">
+        {parts.map((part, i) => (
+          <article class="part-card">
+            <div class="part-index">{String(i + 1).padStart(2, "0")}</div>
+            <div class="part-main">
+              <div class="part-topline"><span class="tag">✓ Compatibilité vérifiée</span><span class="kind">{part.consumable_type === "filter" ? "Filtre" : part.consumable_type === "bag" ? "Sac aspirateur" : "Consommable"}</span></div>
+              <h3>{part.manufacturer_part_number}</h3>
+              {part.consumable_name && <p class="part-name">{part.consumable_name}</p>}
+              <p class="match">Compatible avec <strong>{name}</strong> selon la liste du fabricant.</p>
+              <div class="source">
+                <div class="source-heading"><span>Preuve constructeur</span><span class="proof-count">{officialProofs(part).length} source{officialProofs(part).length > 1 ? "s" : ""}</span></div>
+                {officialProofs(part).map((proof) => (
+                  <div class="proof">
+                    <a href={proof.source_url} target="_blank" rel="noopener noreferrer">Vérifier chez le fabricant <span aria-hidden="true">↗</span></a>
+                    {proof.retrieved_at && <small>Source consultée le {new Date(proof.retrieved_at).toLocaleDateString("fr-FR")}</small>}
+                    {proof.excerpt && <details><summary>Voir l’extrait de compatibilité</summary><blockquote>{proof.excerpt}</blockquote></details>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="how-to section" aria-labelledby="help-title">
+      <div><span class="eyebrow">02 / VÉRIFIER SON APPAREIL</span><h2 id="help-title">Un dernier contrôle avant de commander</h2>
+        <p>Regardez la référence exacte sur l’étiquette de votre appareil. Les lettres et chiffres du modèle doivent correspondre à <strong>{device.model}</strong> : deux appareils de la même gamme n’utilisent pas nécessairement les mêmes consommables.</p>
+        <p>Vérifiez aussi la description et la liste des modèles compatibles sur la page du fabricant, notamment si votre appareil est une variante d’une série.</p>
+      </div>
+      <div class="reference-label"><small>RÉFÉRENCE À COMPARER</small><strong>{device.model}</strong><span>{device.brand} · {device.type || "Appareil"}</span></div>
+    </section>
+
+    {related.length > 0 && <section class="section related" aria-labelledby="related-title">
+      <span class="eyebrow">03 / AUTRES MODÈLES</span>
+      <h2 id="related-title">Appareils partageant au moins une référence</h2>
+      <p>Ils utilisent au moins un consommable référencé ci-dessus, mais leurs autres pièces peuvent être différentes.</p>
+      <div class="related-grid">
+        {related.map((other) => <a href={devicePath(other)}>{other.brand} <strong>{other.model}</strong><span aria-hidden="true">↗</span></a>)}
+      </div>
+    </section>}
+
+    <div class="back"><a href={brandPath(device.brand)}>← Voir les autres appareils {device.brand}</a><a href={sitePath("#rechercher")}>Rechercher une autre référence →</a></div>
+  </main>
+  <footer class="footer"><div class="container"><strong>compatigo.</strong><span>Le bon consommable. Pour le bon appareil.</span><p>Compatigo est indépendant et ne vend pas les produits. Les correspondances reposent sur les références des constructeurs et peuvent évoluer. {catalogDate && "Catalogue mis à jour le " + new Date(catalogDate + "T12:00:00Z").toLocaleDateString("fr-FR") + "."}</p></div></footer>
+</Layout>
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;background:#fafbf9;color:#162832;font-family:"DM Sans",sans-serif;-webkit-font-smoothing:antialiased}:global(a){color:inherit}:global(h1),:global(h2),:global(h3){font-family:Manrope,sans-serif}:global(p){line-height:1.75}.container{max-width:1110px;width:calc(100% - 44px);margin:0 auto}.site-header{border-bottom:1px solid #e4ede8;background:white}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{display:flex;align-items:center;text-decoration:none;font-family:Manrope,sans-serif;font-size:23px;letter-spacing:-1.5px;font-weight:800}.logo-mark{font-size:15px;color:white;background:#18343c;border-radius:11px;width:36px;height:36px;display:grid;place-items:center;margin-right:10px;letter-spacing:-2px}.dot{color:#3ab58d}.nav-action{font-size:13px;font-weight:800;text-decoration:none;border:1px solid #d7e9df;border-radius:9px;padding:11px 15px;color:#227e62}.breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:30px 0 40px;font-size:12px;color:#637c75}.breadcrumbs a:hover{color:#15956c}.intro{padding:10px 0 55px}.kicker,.eyebrow{font-size:11px;font-weight:800;letter-spacing:1.5px;color:#279a79}.kicker{display:flex;align-items:center;gap:9px}.green-dot{display:block;background:#34ba90;border-radius:50%;height:7px;width:7px}.intro h1{max-width:850px;font-size:clamp(36px,5.2vw,62px);line-height:1.14;letter-spacing:-2.7px;margin:18px 0 24px}.intro h1 em{color:#279b76;font-style:normal}.intro>p{font-size:17px;color:#607871;max-width:760px}.summary{display:flex;align-items:center;flex-wrap:wrap;gap:36px;border-top:1px solid #ddebe3;border-bottom:1px solid #ddebe3;padding:25px 4px;margin-top:37px}.summary>div:not(.stamp){display:flex;flex-direction:column;gap:6px}.summary strong{font-family:Manrope,sans-serif;font-size:27px;letter-spacing:-.6px}.summary span{color:#688078;font-size:12px}.stamp{margin-left:auto;background:#e6f6ed;color:#167b59;border-radius:7px;padding:13px 15px;font-size:12px;font-weight:800}.section{margin:55px 0 78px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px}.section-heading p{max-width:370px;color:#6d837b;font-size:13px;margin-bottom:18px}.section h2{font-size:clamp(26px,3.5vw,35px);letter-spacing:-1.1px;margin:12px 0 20px}.parts{display:grid;gap:16px;margin-top:14px}.part-card{display:grid;grid-template-columns:65px 1fr;background:white;border:1px solid #e3eee7;border-radius:15px;overflow:hidden;box-shadow:0 5px 22px #173b2a08}.part-index{background:#eff8f1;padding:27px 19px;font:800 15px Manrope,sans-serif;color:#25936e}.part-main{padding:24px 27px}.part-topline{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.tag{font-size:11px;font-weight:800;color:#157c5c;border-radius:20px;background:#dff5e8;padding:7px 11px}.kind{color:#7b9187;font-size:11px;text-transform:uppercase;letter-spacing:1px}.part-card h3{font-size:clamp(25px,3vw,32px);letter-spacing:-.9px;margin:18px 0 6px}.part-name{font-size:13px;color:#60776e;margin:0}.match{font-size:13px;margin:15px 0 20px;color:#586d64}.source{padding:15px 17px;background:#f5faf7;border:1px solid #e4eee7;border-radius:9px}.source-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;color:#36584b;font-size:12px;font-weight:800}.proof-count{color:#789287;font-weight:500}.proof{padding:12px 0 0}.proof a{font-size:13px;font-weight:800;color:#147a5b;text-decoration:underline;text-underline-offset:3px}.proof small{display:block;margin-top:6px;font-size:11px;color:#7c9186}.proof details{margin-top:11px;font-size:12px}.proof summary{cursor:pointer;color:#5f7c6e}.proof blockquote{white-space:pre-line;border-left:3px solid #b3dbc6;margin:12px 0 0;padding:10px 13px;color:#485f54;background:white;line-height:1.65;overflow-wrap:anywhere}.how-to{display:grid;grid-template-columns:1fr 260px;gap:50px;align-items:center;background:#eaf4ec;border-radius:16px;padding:38px 42px}.how-to p{color:#596f64;font-size:13px;max-width:630px}.reference-label{background:white;border-radius:12px;border:1px dashed #a9cbbc;padding:23px;display:flex;flex-direction:column;gap:12px;box-shadow:0 8px 24px #1138280b}.reference-label small{font-size:10px;color:#779287;font-weight:800;letter-spacing:1px}.reference-label strong{font:800 25px Manrope,sans-serif;letter-spacing:-.6px}.reference-label span{font-size:12px;color:#657f73}.related>p{color:#657f73;font-size:13px}.related-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.related-grid a{display:flex;gap:6px;align-items:center;padding:14px;border:1px solid #e0ebe4;background:white;border-radius:9px;font-size:12px;text-decoration:none}.related-grid a span{margin-left:auto;color:#24966f}.related-grid a:hover{border-color:#5ebc96}.back{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;margin:65px 0 80px}.back a{font-size:13px;font-weight:800;color:#187f60;text-decoration:none}.footer{background:#19333c;color:#effcf5;padding:34px 0}.footer strong{font:800 22px Manrope,sans-serif;letter-spacing:-1px;margin-right:20px}.footer span{font-size:12px;color:#c5d8d0}.footer p{color:#a8c1b5;font-size:11px;margin:12px 0 0}@media(max-width:700px){.nav{height:65px}.logo{font-size:19px}.breadcrumbs{margin:22px 0}.intro{padding-bottom:20px}.intro h1{letter-spacing:-1.5px}.intro>p{font-size:14px}.summary{gap:20px}.stamp{margin-left:0}.section-heading{display:block}.part-card{grid-template-columns:38px 1fr}.part-index{padding:25px 10px;font-size:11px}.part-main{padding:18px}.how-to{grid-template-columns:1fr;padding:25px;gap:15px}.related-grid{grid-template-columns:repeat(2,1fr)}}
+</style>
