@@ -9,7 +9,7 @@ import io
 import json
 import os
 from pathlib import Path
-from urllib.request import Request, urlopen
+from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
 from zipfile import ZipFile
 
 API = "https://api.github.com/repos/trexdbg/compatigo_agent"
@@ -34,8 +34,26 @@ def main() -> None:
         for artifact in artifacts.get("artifacts", []):
             if artifact["name"] != "compatibility-poc-report" or artifact["expired"]:
                 continue
-            with urlopen(Request(artifact["archive_download_url"], headers=HEADERS), timeout=60) as response:
-                data = response.read()
+            # Artifact download redirects to Azure blob storage. Never forward
+            # the GitHub PAT to the blob host: its signed URL is sufficient.
+            class NoRedirect(HTTPRedirectHandler):
+                def redirect_request(self, req, fp, code, msg, headers, newurl):
+                    return None
+
+            from urllib.error import HTTPError
+            try:
+                with build_opener(NoRedirect()).open(
+                    Request(artifact["archive_download_url"], headers=HEADERS), timeout=60
+                ) as response:
+                    data = response.read()
+            except HTTPError as exc:
+                if exc.code not in (301, 302, 303, 307, 308):
+                    raise
+                signed_url = exc.headers.get("Location")
+                if not signed_url or not signed_url.startswith("https://"):
+                    raise ValueError("Missing secure artifact redirect URL") from exc
+                with urlopen(Request(signed_url, headers={"User-Agent": "CompatigoCatalogSync/1.0"}), timeout=60) as response:
+                    data = response.read()
             with ZipFile(io.BytesIO(data)) as archive:
                 if "catalog.json" not in archive.namelist():
                     continue
