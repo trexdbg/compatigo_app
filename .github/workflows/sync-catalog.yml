@@ -1,6 +1,11 @@
 name: Sync verified catalog
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/download_catalog.py"
+      - ".github/workflows/sync-catalog.yml"
   schedule:
     - cron: "47 5 * * *"
   workflow_dispatch:
