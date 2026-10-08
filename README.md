@@ -1,8 +1,10 @@
-# Compatigo — Frontend
+# Compatigo — Frontend GitHub Pages
 
-Application web Astro statique, pensée pour Cloudflare Pages. Recherche par référence d'appareil, preuves constructeur et statut de vérification.
+Site Astro statique hébergé gratuitement sur GitHub Pages.
 
-## Démarrage
+**URL prévue : https://trexdbg.github.io/compatigo_app/**
+
+## Développement local
 
 ```bash
 npm install
@@ -10,29 +12,12 @@ npm run dev
 npm run build
 ```
 
-## Déploiement Cloudflare Pages
+## Publication
 
-Framework preset : **Astro** ; build command : `npm run build` ; output directory : `dist` ; Node.js 22 ou supérieur.
+Le workflow `.github/workflows/deploy.yml` compile et publie automatiquement sur chaque push de `main`.
 
-## Catalogue
+Dans **Settings → Pages → Build and deployment → Source**, sélectionner **GitHub Actions**. Le dépôt doit autoriser GitHub Pages.
 
-`public/data/catalog.json` est le contrat provisoire entre `compatigo_agent` et le frontend. Les exemples inclus sont des **entrées de démonstration, non validées**. L'interface affiche seulement les consommables portant `status: "verified"` avec preuve source ; elle n'invente jamais de compatibilité ou de prix. Intégrer plus tard un export agent validé en CI.
+## Données
 
-Structure d'une entrée :
-
-```json
-{
-  "brand": "Rowenta",
-  "model": "RO7649EA",
-  "type": "Aspirateur",
-  "verified": true,
-  "parts": [{
-    "manufacturer_part_number": "REFERENCE",
-    "consumable_type": "filter",
-    "status": "verified",
-    "evidence": [{"source_url": "https://constructeur.example/source"}]
-  }]
-}
-```
-
-La compatibilité et l'affiliation doivent rester indépendantes. Pas d'affichage d'offres commerciales non vérifiées.
+Le fichier `public/data/catalog.json` est pour l'instant un catalogue de démonstration. Il sera remplacé par un export vérifié de `compatigo_agent`. Les relations non vérifiées ne sont pas affichées comme compatibles. Les liens d'affiliation seront ajoutés séparément.
