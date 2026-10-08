@@ -14,6 +14,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Test merchant offer matcher (offline)
+        run: python -m unittest discover -s tests -v
+      - name: Generate private offer preview without partner feeds
+        run: python scripts/match_offers.py
       - run: npm install
       - run: npm run build
       - name: Validate generated SEO pages

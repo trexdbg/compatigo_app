@@ -57,3 +57,14 @@ Après déploiement, soumettre `https://trexdbg.github.io/compatigo_app/sitemap.
 4. Paramétrer le domaine personnalisé GitHub Pages et les DNS ; déclarer le nouveau domaine dans Search Console, puis planifier les redirections et la migration des anciennes URLs.
 
 L'affiliation constitue une couche distincte, ajoutée uniquement après fiabilisation du catalogue.
+
+## Association des offres marchandes (prototype hors ligne)
+
+Le script `scripts/match_offers.py` permet de croiser les références fabricant du catalogue avec des exports marchands normalisés, exclusivement sur **marque + référence exacte**. Les offres restent en aperçu local, sans aucun prix ou lien affilié publié sur le site.
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/match_offers.py --feed tests/fixtures/demo_offers.csv
+```
+
+Le rapport et les offres de démonstration sont produits dans `build/` (ignoré par Git). L'exemple marchand est **fictif**. Mode d'emploi et prérequis pour brancher Awin / Effiliation : [docs/merchant-offers.md](docs/merchant-offers.md).
