@@ -16,3 +16,5 @@ jobs:
       - run: python -m unittest discover -s scripts -p 'test_*.py'
       - run: npm install
       - run: npm run build
+      - name: Validate generated SEO pages
+        run: python3 scripts/check_seo_build.py
