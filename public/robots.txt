@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://trexdbg.github.io/compatigo_app/sitemap.xml
