@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { brandPath, publishedBrands, publishedDevices, sitePath } from "../../lib/catalog";
+const brands = publishedBrands();
+const total = publishedDevices().length;
+const title = "Catalogue des appareils et filtres compatibles | Compatigo";
+const description = "Explorez les marques et modèles d'appareils disposant de filtres et consommables compatibles confirmés par les fabricants.";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: title,
+  description,
+  url: Astro.url.href,
+};
+---
+<Layout title={title} description={description} structuredData={structuredData}>
+  <header><div class="wrap nav"><a class="logo" href={sitePath()}>compatigo<span>.</span></a><a class="cta" href={sitePath("#rechercher")}>Trouver mon appareil ↗</a></div></header>
+  <main class="wrap">
+    <nav class="crumbs" aria-label="Fil d’Ariane"><a href={sitePath()}>Accueil</a><span>/</span><span aria-current="page">Catalogue</span></nav>
+    <section class="intro"><span class="eyebrow">LE CATALOGUE COMPATIGO</span>
+      <h1>Vos marques.<br/><em>Les bonnes références.</em></h1>
+      <p>Choisissez une marque, puis la référence exacte de votre appareil. Les fiches affichées ici disposent de relations de compatibilité associées à des preuves constructeur.</p>
+      <div class="figures"><strong>{brands.length}</strong><span>marque{brands.length > 1 ? "s" : ""}</span><strong>{total}</strong><span>appareils vérifiés</span></div>
+    </section>
+    <section class="brands" aria-labelledby="brands-title"><h2 id="brands-title">Marques actuellement disponibles</h2>
+      <div class="grid">{brands.map((brand) => (
+        <a href={brandPath(brand.name)} class="brand-card">
+          <span class="tick">✓</span><strong>{brand.name}</strong>
+          <span>{brand.count} appareil{brand.count > 1 ? "s" : ""} référencé{brand.count > 1 ? "s" : ""}</span>
+          <small>Explorer les références →</small>
+        </a>
+      ))}</div>
+      <p class="note">Une marque n’apparaît ici qu’après validation des correspondances et de leurs sources. Le catalogue est enrichi progressivement.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">Compatigo · Le bon consommable, pour le bon appareil.</div></footer>
+</Layout>
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;background:#f9fbf9;color:#18323b;font-family:"DM Sans",sans-serif}:global(h1),:global(h2){font-family:Manrope,sans-serif}:global(a){color:inherit}.wrap{max-width:1090px;width:calc(100% - 42px);margin:auto}header{background:white;border-bottom:1px solid #e3ede7}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{text-decoration:none;font:800 24px Manrope,sans-serif;letter-spacing:-1.4px}.logo span{color:#32b48b}.cta{padding:13px;border:1px solid #d5e8de;border-radius:9px;text-decoration:none;color:#218366;font-size:12px;font-weight:800}.crumbs{display:flex;align-items:center;gap:12px;color:#71847c;font-size:12px;margin:30px 0 65px}.intro{padding-bottom:58px}.eyebrow{font-size:11px;letter-spacing:1.7px;color:#279e78;font-weight:800}.intro h1{font-size:clamp(40px,6.3vw,72px);letter-spacing:-3px;line-height:1.13;margin:16px 0 25px}.intro h1 em{font-style:normal;color:#31a67f}.intro p{font-size:16px;color:#6b8076;line-height:1.75;max-width:750px}.figures{display:flex;flex-wrap:wrap;align-items:center;gap:14px;border-block:1px solid #e0ece5;margin-top:35px;padding:20px 0}.figures strong{font:800 26px Manrope,sans-serif}.figures span{color:#71857b;font-size:12px;margin-right:30px}.brands{padding-bottom:115px}.brands h2{font-size:30px;letter-spacing:-1px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:25px}.brand-card{padding:25px;background:white;border:1px solid #e1ebe4;border-radius:13px;display:flex;flex-direction:column;gap:12px;text-decoration:none;min-height:207px}.brand-card:hover{border-color:#3dbb91}.tick{display:grid;place-items:center;background:#def4e8;color:#21825f;border-radius:50%;font-weight:800;width:30px;height:30px}.brand-card strong{font:800 25px Manrope,sans-serif}.brand-card>span:not(.tick){color:#71867b;font-size:12px}.brand-card small{margin-top:auto;color:#1d8a67;font-size:12px;font-weight:800}.note{font-size:12px;line-height:1.7;color:#71877b;margin-top:23px}footer{background:#19343d;color:#d9efe4;padding:35px 0;font-size:12px}@media(max-width:700px){.grid{grid-template-columns:1fr}.intro h1{letter-spacing:-1.5px}.intro p{font-size:14px}}
+</style>
