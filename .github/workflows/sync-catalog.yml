@@ -63,6 +63,8 @@ jobs:
         run: npm install
       - name: Build updated catalog site
         run: npm run build
+      - name: Validate generated SEO pages
+        run: python3 scripts/check_seo_build.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

@@ -13,9 +13,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test offline merchant matching
+      - run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Test merchant offer matcher (offline)
         run: python -m unittest discover -s tests -v
-      - name: Generate preview (offline, without merchant feeds)
+      - name: Generate private offer preview without partner feeds
         run: python scripts/match_offers.py
       - run: npm install
       - run: npm run build
+      - name: Validate generated SEO pages
+        run: python3 scripts/check_seo_build.py
