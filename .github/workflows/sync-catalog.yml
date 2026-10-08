@@ -1,0 +1,43 @@
+name: Sync verified catalog
+
+on:
+  schedule:
+    - cron: "47 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch latest successful agent catalog
+        env:
+          GH_TOKEN: ${{ secrets.COMPATIGO_AGENT_READ_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Configure COMPATIGO_AGENT_READ_TOKEN with Actions:read permission on private compatigo_agent repository."
+            exit 1
+          fi
+          python scripts/download_catalog.py
+      - name: Commit catalog when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/catalog.json
+          if git diff --cached --quiet; then
+            echo "Catalog unchanged"
+          else
+            git commit -m "data: sync verified compatibility catalog"
+            git push
+          fi
