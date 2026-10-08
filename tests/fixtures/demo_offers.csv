@@ -1,0 +1,3 @@
+network,merchant,brand,manufacturer_part_number,title,product_url,affiliate_url,price_eur,currency,availability,checked_at
+DemoNetwork,Demo Shop,Rowenta,ZR903701,Kit filtre Rowenta ZR903701,https://merchant.example/filtre/903701,,19.90,EUR,in_stock,
+DemoNetwork,Demo Shop,Rowenta,ZR90370,NE DOIT PAS CORRESPONDRE,https://merchant.example/filtre/incorrect,,19.90,EUR,in_stock,

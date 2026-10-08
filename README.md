@@ -20,4 +20,17 @@ Dans **Settings → Pages → Build and deployment → Source**, sélectionner *
 
 ## Données
 
-Le fichier `public/data/catalog.json` est pour l'instant un catalogue de démonstration. Il sera remplacé par un export vérifié de `compatigo_agent`. Les relations non vérifiées ne sont pas affichées comme compatibles. Les liens d'affiliation seront ajoutés séparément.
+Le fichier `public/data/catalog.json` est synchronisé depuis l'agent Compatigo. Les relations non vérifiées ne doivent pas être affichées comme compatibles. La qualité des références extraites reste à auditer dans `compatigo_agent`.
+
+### Rapprochement marchand : expérimentation hors ligne
+
+Un premier moteur d'analyse des offres existe dans `scripts/match_offers.py`. Il rapproche uniquement les références explicites fabricant **et marque** avec des exports marchands normalisés. Aucun lien affilié ni prix n'est intégré au frontend pour le moment.
+
+```bash
+python -m unittest discover -s tests -v
+python scripts/match_offers.py --feed tests/fixtures/demo_offers.csv
+```
+
+Les résultats et rapports sont écrits dans le dossier local `build/` ignoré par Git. **Exemple fictif, aucune offre commerciale réelle.**
+
+Guide complet : [docs/merchant-offers.md](docs/merchant-offers.md).
