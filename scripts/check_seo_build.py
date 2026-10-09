@@ -30,6 +30,7 @@ def eligible(device: dict) -> bool:
              or bool(re.fullmatch(r"(RO|RH|RR|YY|IX|MO)[0-9][A-Z0-9]{3,7}", str(device.get("model", "")), re.I)))
         and any(
             part.get("status") == "verified"
+            and bool(str(part.get("manufacturer_part_number", "")).strip())
             and any(
                 evidence.get("explicit_relation") is True
                 and evidence.get("source_kind") in OFFICIAL
@@ -74,9 +75,26 @@ def main() -> None:
     catalog = json.loads((ROOT / "public/data/catalog.json").read_text(encoding="utf-8"))
     devices = [d for d in catalog["devices"] if eligible(d)]
     brands = sorted(set(d["brand"] for d in devices))
-    expected_routes = [BASE, BASE + "appareils/"]
+    expected_routes = [BASE, BASE + "appareils/", BASE + "pieces/"]
     expected_routes += [BASE + "marques/" + slug(brand) + "/" for brand in brands]
     expected_routes += [BASE + slug(d["brand"]) + "/" + slug(d["model"]) + "/" for d in devices]
+    part_device_paths = {}
+    for d in devices:
+        device_path = BASE + slug(d["brand"]) + "/" + slug(d["model"]) + "/"
+        for part in d.get("parts", []):
+            if part.get("status") != "verified":
+                continue
+            reference = str(part.get("manufacturer_part_number", "")).strip().upper()
+            if not reference or not any(
+                proof.get("explicit_relation") is True
+                and proof.get("source_kind") in OFFICIAL
+                and str(proof.get("source_url", "")).startswith("https://")
+                for proof in part.get("evidence", [])
+            ):
+                continue
+            part_route = BASE + "pieces/" + slug(d["brand"]) + "/" + slug(reference) + "/"
+            part_device_paths.setdefault(part_route, set()).add(device_path)
+    expected_routes += list(part_device_paths)
     if len(expected_routes) != len(set(expected_routes)):
         raise AssertionError("Duplicate page routes")
 
@@ -130,7 +148,20 @@ def main() -> None:
         if parser.h1s != 1:
             raise AssertionError(f"Expected one H1 at {url}: {parser.h1s}")
 
-        if relative and relative != "appareils" and not relative.startswith("marques/"):
+        if relative.startswith("pieces/"):
+            if "Vérifier chez le fabricant" not in html:
+                raise AssertionError(f"Missing original manufacturer proof at {url}")
+            if not parser.scripts or not any(
+                item.get("@type") == "WebPage"
+                and item.get("about", {}).get("@type") == "Product"
+                for item in parser.scripts[0].get("@graph", [])
+            ):
+                raise AssertionError(f"Missing part JSON-LD for {url}")
+            for device_link in part_device_paths.get(parsed.path, ()):
+                if device_link not in parser.links:
+                    raise AssertionError(f"Part page {url} lacks link to {device_link}")
+
+        if relative and relative not in ("appareils", "pieces") and not relative.startswith(("marques/", "pieces/")):
             if not parser.scripts:
                 raise AssertionError(f"Missing JSON-LD for device {url}")
             graph = parser.scripts[0].get("@graph", [])
@@ -144,7 +175,7 @@ def main() -> None:
     if "Sitemap: " + SITE + BASE + "sitemap.xml" not in robots:
         raise AssertionError("robots.txt does not reference the production sitemap")
 
-    print(f"SEO build validated: {len(devices)} device pages, {len(brands)} brand pages, {len(locs)} sitemap URLs")
+    print(f"SEO build validated: {len(devices)} device pages, {len(part_device_paths)} part pages, {len(brands)} brand pages, {len(locs)} sitemap URLs")
 
 
 if __name__ == "__main__":
