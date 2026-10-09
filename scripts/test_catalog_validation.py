@@ -47,6 +47,27 @@ class CatalogValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "Inconsistent verified"):
             validate_catalog(catalog)
 
+    def test_rejects_duplicate_models_case_insensitive(self):
+        catalog = good_catalog()
+        repeated = copy.deepcopy(catalog["devices"][0])
+        repeated["model"] = "ro7649ea"
+        catalog["devices"].append(repeated)
+        with self.assertRaisesRegex(ValueError, "Duplicate device"):
+            validate_catalog(catalog)
+
+    def test_rejects_duplicate_part_references(self):
+        catalog = good_catalog()
+        catalog["devices"][0]["parts"].append(copy.deepcopy(catalog["devices"][0]["parts"][0]))
+        with self.assertRaisesRegex(ValueError, "duplicate part"):
+            validate_catalog(catalog)
+
+    def test_accepts_distinct_curated_unverified_device(self):
+        catalog = good_catalog()
+        catalog["devices"].append({
+            "brand": "Levoit", "model": "Core 300", "verified": False, "parts": []
+        })
+        self.assertEqual(len(validate_catalog(catalog)), 2)
+
     def test_rejects_ordinary_retailer_as_official(self):
         catalog = good_catalog()
         catalog["devices"][0]["parts"][0]["evidence"][0]["source_kind"] = "retailer"
