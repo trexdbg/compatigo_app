@@ -34,15 +34,15 @@ class MatcherTests(unittest.TestCase):
         self.feed = self.root / "merchant.json"
         self.catalog.write_text(json.dumps({
             "schema_version": 1, "status": "verified_catalog", "devices": [
-                {"brand": "Rowenta", "model": "RO7640EA", "parts": [{
+                {"brand": "Rowenta", "model": "RO7640EA", "verified": true, "parts": [{
                     "manufacturer_part_number": "ZR903701", "status": "verified",
-                    "evidence": [{"source_url": "https://rowenta.fr/parts/903701"}]}
+                    "evidence": [{"source_url": "https://rowenta.fr/parts/903701", "source_kind": "manufacturer_product_page", "explicit_relation": true}]}
                 ]},
-                {"brand": "Other", "model": "X1", "parts": [{
+                {"brand": "Other", "model": "X1", "verified": true, "parts": [{
                     "manufacturer_part_number": "ZR903701", "status": "verified",
-                    "evidence": [{"source_url": "https://example.org/x1"}]}
+                    "evidence": [{"source_url": "https://example.org/x1", "source_kind": "manufacturer_support", "explicit_relation": true}]}
                 ]},
-                {"brand": "Rowenta", "model": "RO2957EA", "parts": [{
+                {"brand": "Rowenta", "model": "RO2957EA", "verified": true, "parts": [{
                     "manufacturer_part_number": "ZR904301", "status": "unverified",
                     "evidence": [{"source_url": "https://rowenta.fr/part"}]}
                 ]},
@@ -101,6 +101,15 @@ class MatcherTests(unittest.TestCase):
         self.assertEqual(preview["offers"], [])
         self.assertEqual(report["matched_offers"], 0)
         self.assertEqual(report["verified_distinct_parts"], 2)
+
+    def test_requires_explicit_verified_manufacturer_proof(self):
+        catalog = json.loads(self.catalog.read_text(encoding="utf-8"))
+        catalog["devices"][0]["parts"][0]["evidence"][0]["explicit_relation"] = False
+        catalog["devices"][1]["verified"] = False
+        self.catalog.write_text(json.dumps(catalog), encoding="utf-8")
+        preview, report = self.run_match([row()])
+        self.assertEqual(preview["offers"], [])
+        self.assertEqual(report["verified_distinct_parts"], 0)
 
 
 if __name__ == "__main__":
