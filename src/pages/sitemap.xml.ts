@@ -1,5 +1,5 @@
 import type { APIContext } from "astro";
-import { brandPath, catalogDate, devicePath, publishedBrands, publishedDevices, sitePath } from "../lib/catalog";
+import { brandPath, catalogDate, devicePath, partPath, publishedBrands, publishedDevices, publishedParts, sitePath } from "../lib/catalog";
 
 // Generated at build time: the sitemap is never a list of guessed devices.
 export const prerender = true;
@@ -15,8 +15,10 @@ export function GET({ site }: APIContext): Response {
   const routes = [
     sitePath(),
     sitePath("appareils/"),
+    sitePath("pieces/"),
     ...publishedBrands().map((brand) => brandPath(brand.name)),
     ...publishedDevices().map((device) => devicePath(device)),
+    ...publishedParts().map((part) => partPath(part.brand, part.reference)),
   ];
   const unique = [...new Set(routes)];
   const entries = unique.map((path) => {
