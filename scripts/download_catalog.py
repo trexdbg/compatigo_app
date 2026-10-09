@@ -45,12 +45,17 @@ def validate_catalog(catalog: dict) -> list[dict]:
         raise ValueError("Empty catalog: refusing to overwrite public data")
 
     verified = 0
+    seen_devices = set()
     for device in devices:
         if not isinstance(device, dict):
             raise ValueError("Invalid device")
         brand, model = device.get("brand"), device.get("model")
         if not isinstance(brand, str) or not isinstance(model, str) or not model.strip():
             raise ValueError("Missing device brand/model")
+        device_key = (brand.strip().casefold(), model.strip().casefold())
+        if device_key in seen_devices:
+            raise ValueError(f"Duplicate device in source catalog: {brand} {model}")
+        seen_devices.add(device_key)
         if brand.casefold() == "rowenta" and ROWENTA_MODEL_RE.fullmatch(model) is None:
             raise ValueError(f"Invalid Rowenta device: {model}")
 
@@ -59,11 +64,16 @@ def validate_catalog(catalog: dict) -> list[dict]:
             raise ValueError("Invalid device parts")
         if device.get("verified") is not bool(parts):
             raise ValueError(f"Inconsistent verified flag for {brand} {model}")
+        seen_parts = set()
         for part in parts:
             if not isinstance(part, dict) or part.get("status") != "verified":
                 raise ValueError("Unverified part: refusing to publish")
             if not isinstance(part.get("manufacturer_part_number"), str) or not part["manufacturer_part_number"]:
                 raise ValueError("Missing manufacturer part number")
+            part_key = part["manufacturer_part_number"].strip().upper()
+            if not part_key or part_key in seen_parts:
+                raise ValueError(f"Invalid or duplicate part on {brand} {model}")
+            seen_parts.add(part_key)
             evidence = part.get("evidence")
             if not isinstance(evidence, list) or not evidence:
                 raise ValueError("Missing compatibility evidence")
@@ -135,7 +145,17 @@ def main() -> None:
     target = Path("public/data/catalog.json")
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Imported {len(devices)} devices, {sum(len(d['parts']) for d in devices)} verified relations")
+    by_brand = {}
+    for device in devices:
+        brand = device["brand"]
+        stats = by_brand.setdefault(brand, {"verified_devices": 0, "verified_relations": 0})
+        if device["verified"]:
+            stats["verified_devices"] += 1
+            stats["verified_relations"] += len(device["parts"])
+    print(f"Imported {len(devices)} candidate devices; "
+          f"{sum(s['verified_devices'] for s in by_brand.values())} verified devices; "
+          f"{sum(s['verified_relations'] for s in by_brand.values())} verified relations.")
+    print("Verified brand coverage: " + json.dumps(by_brand, ensure_ascii=False, sort_keys=True))
 
 
 if __name__ == "__main__":
