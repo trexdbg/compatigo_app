@@ -1,0 +1,114 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import {
+  brandPath, catalogDate, devicePath, partPath, publishedParts,
+  sitePath, slug, type PublishedPart,
+} from "../../../lib/catalog";
+
+export function getStaticPaths() {
+  const seen = new Set<string>();
+  return publishedParts().map((part) => {
+    const path = slug(part.brand) + "/" + slug(part.reference);
+    if (seen.has(path)) throw new Error("Duplicate consumable URL: " + path);
+    seen.add(path);
+    return {
+      params: { brand: slug(part.brand), reference: slug(part.reference) },
+      props: { part },
+    };
+  });
+}
+
+const { part } = Astro.props as { part: PublishedPart };
+const partName = part.kind === "bag" ? "Sac" : "Filtre";
+const title = partName + " " + part.reference + " " + part.brand + " : appareils compatibles | Compatigo";
+const description = part.reference + " : " + part.devices.length +
+  " appareil(s) " + part.brand + " identifiés comme compatibles d'après les sources constructeur. Références et preuves consultables.";
+const url = Astro.url.href;
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: new URL(sitePath(), Astro.site).href },
+        { "@type": "ListItem", position: 2, name: "Consommables", item: new URL(sitePath("pieces/"), Astro.site).href },
+        { "@type": "ListItem", position: 3, name: part.reference, item: url },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      url,
+      name: title,
+      description,
+      inLanguage: "fr-FR",
+      about: {
+        "@type": "Product",
+        name: part.name || partName + " " + part.reference,
+        sku: part.reference,
+        brand: { "@type": "Brand", name: part.brand },
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        name: "Appareils compatibles vérifiés",
+        itemListElement: part.devices.map((device, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: device.brand + " " + device.model,
+          url: new URL(devicePath(device), Astro.site).href,
+        })),
+      },
+    },
+  ],
+};
+---
+<Layout title={title} description={description} structuredData={structuredData}>
+  <header class="topbar"><div class="container bar">
+    <a class="logo" href={sitePath()} aria-label="Compatigo, accueil">compatigo<span>.</span></a>
+    <a class="nav-link" href={sitePath("pieces/")}>← Toutes les pièces vérifiées</a>
+  </div></header>
+  <main class="container">
+    <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+      <a href={sitePath()}>Accueil</a><span>/</span>
+      <a href={sitePath("pieces/")}>Consommables</a><span>/</span>
+      <span aria-current="page">{part.reference}</span>
+    </nav>
+    <section class="intro">
+      <div class="eyebrow">✓ COMPATIBILITÉ SOURCÉE CHEZ LE FABRICANT</div>
+      <h1>{partName} <em>{part.reference}</em> : appareils compatibles</h1>
+      {part.name && <p class="part-name">{part.name}</p>}
+      <p>Cette référence {part.brand} est associée aux appareils ci-dessous dans les sources officielles consultées. Vérifiez toujours le code complet inscrit sur votre appareil avant de commander.</p>
+      <div class="figures"><strong>{part.devices.length}</strong><span>appareil{part.devices.length > 1 ? "s" : ""} vérifié{part.devices.length > 1 ? "s" : ""}</span><strong>{part.proofs.length}</strong><span>source{part.proofs.length > 1 ? "s" : ""} constructeur</span></div>
+    </section>
+    <section class="section" aria-labelledby="devices-title">
+      <h2 id="devices-title">Quels appareils utilisent la référence {part.reference} ?</h2>
+      <p>Chaque fiche détaille les autres filtres ou pièces de remplacement vérifiés pour ce modèle.</p>
+      <div class="device-grid">
+        {part.devices.map((device) => (
+          <a class="device" href={devicePath(device)}>
+            <span><small>{device.brand} · {device.type || "Appareil"}</small><strong>{device.model}</strong></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        ))}
+      </div>
+    </section>
+    <section class="section sources" aria-labelledby="sources-title">
+      <h2 id="sources-title">Preuves de compatibilité</h2>
+      <p>Nous ne déduisons pas une compatibilité à partir d'une simple ressemblance de nom : chaque relation publiée doit être explicite dans une source du fabricant.</p>
+      {part.proofs.map((proof) => (
+        <article class="source">
+          <div><strong>{proof.source_title || "Source constructeur"}</strong>
+            {proof.retrieved_at && <small>Consultée le {new Date(proof.retrieved_at).toLocaleDateString("fr-FR")}</small>}
+          </div>
+          <a href={proof.source_url} target="_blank" rel="noopener noreferrer">Vérifier chez le fabricant ↗</a>
+          {proof.excerpt && <details><summary>Afficher l'extrait de la source</summary><blockquote>{proof.excerpt}</blockquote></details>}
+        </article>
+      ))}
+    </section>
+    <section class="notice"><strong>Avant d'acheter</strong><p>Comparez la référence constructeur exacte et la liste de compatibilité figurant sur l'emballage ou la page fabricant. Compatigo n'est pas un vendeur et n'affiche pas de prix fictifs.</p></section>
+    <nav class="bottom-nav"><a href={brandPath(part.brand)}>Voir les appareils {part.brand} →</a><a href={sitePath("pieces/")}>Toutes les pièces →</a></nav>
+  </main>
+  <footer><div class="container">Compatigo — Références et sources vérifiables. {catalogDate && "Catalogue mis à jour le " + new Date(catalogDate + "T12:00:00Z").toLocaleDateString("fr-FR") + "."}</div></footer>
+</Layout>
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;background:#fafbf9;color:#17313b;font-family:"DM Sans",sans-serif}:global(a){color:inherit}.container{max-width:1050px;width:calc(100% - 40px);margin:auto}.topbar{background:white;border-bottom:1px solid #e2ece6}.bar{height:75px;display:flex;align-items:center;justify-content:space-between;gap:16px}.logo{font:800 24px Manrope,sans-serif;letter-spacing:-1.4px;text-decoration:none}.logo span{color:#31a87e}.nav-link{font-size:12px;color:#218060;font-weight:800;text-decoration:none}.breadcrumbs{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:#71867c;font-size:12px;margin:28px 0 60px}.breadcrumbs a:hover{color:#167654}.intro{max-width:850px}.eyebrow{letter-spacing:1.3px;color:#279e78;font-size:11px;font-weight:800}h1,h2{font-family:Manrope,sans-serif}h1{font-size:clamp(36px,5vw,60px);line-height:1.2;letter-spacing:-2.3px;margin:17px 0}h1 em{font-style:normal;color:#31a87e}.part-name{font-weight:800;color:#285e4d}.intro>p,.section>p{max-width:800px;color:#667d73;line-height:1.8;font-size:15px}.figures{display:flex;align-items:center;gap:13px;flex-wrap:wrap;padding:24px 0;border-block:1px solid #e0eae4;margin-top:30px}.figures strong{font:800 26px Manrope,sans-serif}.figures span{font-size:12px;color:#647e71;margin-right:24px}.section{margin-top:72px}.section h2{font-size:28px;letter-spacing:-1px}.device-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:12px;margin-top:26px}.device{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #deebe3;background:white;padding:20px;border-radius:12px;text-decoration:none;color:#1a4034}.device:hover{border-color:#39b28b;background:#f2faf5}.device span:first-child{display:flex;flex-direction:column;gap:6px}.device small{color:#758a80;font-size:11px}.device strong{font-size:15px;overflow-wrap:anywhere}.device>span:last-child{color:#279e78}.sources{margin-bottom:55px}.source{padding:22px;border:1px solid #deebe3;border-radius:12px;background:white;margin:12px 0;display:flex;align-items:center;gap:20px;justify-content:space-between;flex-wrap:wrap}.source div{display:flex;flex-direction:column;gap:6px;flex:1}.source strong{font-size:13px}.source small{color:#7a8e83;font-size:11px}.source>a{font-size:12px;color:#198060;font-weight:800}.source details{flex:1 1 100%;font-size:12px;color:#657a72}.source summary{cursor:pointer;font-weight:700}.source blockquote{overflow-wrap:anywhere;white-space:pre-wrap;border-left:3px solid #aadcc2;margin:14px 0 0;padding:10px 14px;max-height:250px;overflow:auto;line-height:1.6}.notice{background:#edf8f0;border-radius:12px;padding:25px;color:#23483a}.notice p{font-size:13px;line-height:1.8;margin-bottom:0}.bottom-nav{display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;margin:35px 0 90px}.bottom-nav a{font-size:13px;font-weight:800;color:#17815c}footer{background:#19343d;color:#d5e9de;padding:32px 0;font-size:12px}@media(max-width:600px){.breadcrumbs{margin-bottom:40px}.section{margin-top:45px}.source{align-items:flex-start}.source>a{width:100%}h1{letter-spacing:-1.4px}.figures span{margin-right:10px}}
+</style>
