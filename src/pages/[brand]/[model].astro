@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import {
-  brandPath, catalogDate, devicePath, officialProofs, publishedDevices,
+  brandPath, catalogDate, devicePath, partPath, officialProofs, publishedDevices,
   slug, sitePath, verifiedParts, type Device,
 } from "../../lib/catalog";
 
@@ -105,7 +105,7 @@ const structuredData = {
             <div class="part-index">{String(i + 1).padStart(2, "0")}</div>
             <div class="part-main">
               <div class="part-topline"><span class="tag">✓ Compatibilité vérifiée</span><span class="kind">{part.consumable_type === "filter" ? "Filtre" : part.consumable_type === "bag" ? "Sac aspirateur" : "Consommable"}</span></div>
-              <h3>{part.manufacturer_part_number}</h3>
+              <h3><a href={partPath(device.brand, part.manufacturer_part_number)}>{part.manufacturer_part_number} ↗</a></h3>
               {part.consumable_name && <p class="part-name">{part.consumable_name}</p>}
               <p class="match">Compatible avec <strong>{name}</strong> selon la liste du fabricant.</p>
               <div class="source">
@@ -141,7 +141,7 @@ const structuredData = {
       </div>
     </section>}
 
-    <div class="back"><a href={brandPath(device.brand)}>← Voir les autres appareils {device.brand}</a><a href={sitePath("#rechercher")}>Rechercher une autre référence →</a></div>
+    <div class="back"><a href={brandPath(device.brand)}>← Voir les autres appareils {device.brand}</a><a href={sitePath("pieces/")}>Tous les filtres vérifiés →</a><a href={sitePath("#rechercher")}>Rechercher une autre référence →</a></div>
   </main>
   <footer class="footer"><div class="container"><strong>compatigo.</strong><span>Le bon consommable. Pour le bon appareil.</span><p>Compatigo est indépendant et ne vend pas les produits. Les correspondances reposent sur les références des constructeurs et peuvent évoluer. {catalogDate && "Catalogue mis à jour le " + new Date(catalogDate + "T12:00:00Z").toLocaleDateString("fr-FR") + "."}</p></div></footer>
 </Layout>

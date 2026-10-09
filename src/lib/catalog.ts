@@ -100,3 +100,52 @@ export function publishedBrands(): { name: string; count: number }[] {
 export const catalogDate = typeof catalog.updated_at === "string"
   ? catalog.updated_at.slice(0, 10)
   : undefined;
+
+export type PublishedPart = {
+  brand: string;
+  reference: string;
+  name?: string | null;
+  kind?: string;
+  devices: Device[];
+  proofs: Proof[];
+};
+
+export function partPath(brand: string, reference: string): string {
+  return sitePath("pieces/" + slug(brand) + "/" + slug(reference) + "/");
+}
+
+// One verified manufacturer reference can fit several appliances. Group edges,
+// retaining actual device links and the original manufacturer evidence.
+export function publishedParts(): PublishedPart[] {
+  const groups = new Map<string, PublishedPart>();
+  for (const device of publishedDevices()) {
+    for (const part of verifiedParts(device)) {
+      const reference = part.manufacturer_part_number.trim().toUpperCase();
+      const key = slug(device.brand) + ":" + reference;
+      let group = groups.get(key);
+      if (!group) {
+        group = {
+          brand: device.brand,
+          reference,
+          name: part.consumable_name,
+          kind: part.consumable_type,
+          devices: [],
+          proofs: [],
+        };
+        groups.set(key, group);
+      }
+      if (!group.devices.some((d) => d.model === device.model)) {
+        group.devices.push(device);
+      }
+      for (const proof of officialProofs(part)) {
+        if (!group.proofs.some((existing) => existing.source_url === proof.source_url)) {
+          group.proofs.push(proof);
+        }
+      }
+    }
+  }
+  return [...groups.values()].sort((a, b) =>
+    a.brand.localeCompare(b.brand, "fr") ||
+    a.reference.localeCompare(b.reference, "fr", { numeric: true }),
+  );
+}

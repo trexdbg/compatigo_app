@@ -1,0 +1,41 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { partPath, publishedParts, sitePath } from "../../lib/catalog";
+const parts = publishedParts();
+const title = "Filtres et consommables référencés par fabricant | Compatigo";
+const description = "Parcourez les références de filtres et consommables dont la compatibilité avec des appareils a été confirmée par une source constructeur.";
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: title,
+  description,
+  url: Astro.url.href,
+};
+---
+<Layout title={title} description={description} structuredData={structuredData}>
+  <header><div class="container bar"><a class="logo" href={sitePath()}>compatigo<span>.</span></a><a class="cta" href={sitePath("appareils/")}>Catalogue des appareils ↗</a></div></header>
+  <main class="container">
+    <nav class="crumbs" aria-label="Fil d’Ariane"><a href={sitePath()}>Accueil</a><span>/</span><span aria-current="page">Consommables</span></nav>
+    <section class="intro">
+      <span class="eyebrow">LES RÉFÉRENCES CONSTRUCTEUR</span>
+      <h1>Vos filtres.<br/><em>Les bonnes références.</em></h1>
+      <p>Choisissez une référence de consommable pour connaître les appareils avec lesquels sa compatibilité a été explicitement confirmée par le fabricant. Les liens vers les preuves sont indiqués sur chaque fiche.</p>
+      <p class="count">{parts.length} référence{parts.length > 1 ? "s" : ""} vérifiée{parts.length > 1 ? "s" : ""}</p>
+    </section>
+    <section class="grid" aria-label="Consommables vérifiés">
+      {parts.map((part) => (
+        <a class="part" href={partPath(part.brand, part.reference)}>
+          <span class="kind">{part.kind === "bag" ? "Sac" : "Filtre"} · {part.brand}</span>
+          <strong>{part.reference}</strong>
+          {part.name && <small class="name">{part.name}</small>}
+          <span class="bottom">{part.devices.length} appareil{part.devices.length > 1 ? "s" : ""} compatible{part.devices.length > 1 ? "s" : ""} <b>↗</b></span>
+        </a>
+      ))}
+    </section>
+    <p class="note">Le catalogue n’affiche que les relations avec preuve constructeur. Une référence absente n’est pas nécessairement incompatible : elle n’a peut-être pas encore été vérifiée.</p>
+  </main>
+  <footer><div class="container">Compatigo · La bonne référence pour le bon appareil.</div></footer>
+</Layout>
+<style>
+  :global(*){box-sizing:border-box}:global(body){margin:0;background:#fafbf9;color:#17313b;font-family:"DM Sans",sans-serif}:global(a){color:inherit}.container{max-width:1090px;width:calc(100% - 42px);margin:auto}header{background:white;border-bottom:1px solid #e4eee8}.bar{height:77px;display:flex;justify-content:space-between;align-items:center;gap:18px}.logo{font:800 24px Manrope,sans-serif;text-decoration:none;letter-spacing:-1.4px}.logo span{color:#35ad87}.cta{border:1px solid #d7e9dd;border-radius:8px;padding:12px;color:#187854;font-size:12px;font-weight:800;text-decoration:none}.crumbs{margin:28px 0 60px;display:flex;gap:12px;color:#7a8c80;font-size:12px}.intro{max-width:800px}.eyebrow{color:#279d75;font-size:11px;font-weight:800;letter-spacing:1.4px}h1{font:800 clamp(37px,6vw,64px)/1.15 Manrope,sans-serif;letter-spacing:-2.4px;margin:16px 0 25px}h1 em{font-style:normal;color:#32a982}.intro>p{font-size:15px;color:#6d8378;line-height:1.8}.intro .count{font-weight:800;color:#208465}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:14px;margin:35px 0 35px}.part{display:flex;flex-direction:column;gap:9px;background:white;border:1px solid #e0ebe4;border-radius:13px;padding:24px;text-decoration:none;min-height:190px}.part:hover{border-color:#39ac82;background:#f6fcf8}.kind{font-size:11px;color:#29936c;font-weight:800}.part strong{font:800 23px Manrope,sans-serif;overflow-wrap:anywhere}.name{font-size:12px;line-height:1.5;color:#70887d}.bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto;font-size:12px;color:#537a67}.bottom b{color:#17835f}.note{color:#6f8379;font-size:12px;line-height:1.7;margin:20px 0 100px}footer{background:#17333b;color:#d7e9dc;padding:32px 0;font-size:12px}@media(max-width:600px){.crumbs{margin-bottom:45px}h1{letter-spacing:-1.4px}.grid{grid-template-columns:1fr}}
+</style>
