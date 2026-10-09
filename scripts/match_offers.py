@@ -71,8 +71,12 @@ def verified_catalog(path: Path) -> tuple[dict, dict, int]:
     if not isinstance(devices, list):
         raise ValueError("Missing devices list")
     parts = defaultdict(set)
+    official_kinds = {
+        "manufacturer_product_page", "manufacturer_manual",
+        "manufacturer_support", "manufacturer_catalog",
+    }
     for device in devices:
-        if not isinstance(device, dict):
+        if not isinstance(device, dict) or device.get("verified") is not True:
             continue
         brand = brand_key(device.get("brand"))
         model = device.get("model")
@@ -83,7 +87,11 @@ def verified_catalog(path: Path) -> tuple[dict, dict, int]:
                 continue
             evidence = part.get("evidence")
             if not isinstance(evidence, list) or not any(
-                isinstance(ev, dict) and safe_https_url(ev.get("source_url")) for ev in evidence
+                isinstance(ev, dict)
+                and ev.get("explicit_relation") is True
+                and ev.get("source_kind") in official_kinds
+                and safe_https_url(ev.get("source_url"))
+                for ev in evidence
             ):
                 continue
             key = part_key(part.get("manufacturer_part_number"))

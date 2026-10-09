@@ -67,4 +67,13 @@ python -m unittest discover -s tests -v
 python scripts/match_offers.py --feed tests/fixtures/demo_offers.csv
 ```
 
+Pour préparer un **flux Awin autorisé** au format CSV ou CSV.gz, sans publier d'offres :
+
+```bash
+python scripts/normalize_awin.py --input chemin/awin.csv.gz --output build/awin-normalized.csv
+python scripts/match_offers.py --feed build/awin-normalized.csv
+```
+
+La normalisation exige un `mpn` réel et une marque fabricant ; aucun numéro n'est deviné dans le titre du produit.
+
 Le rapport et les offres de démonstration sont produits dans `build/` (ignoré par Git). L'exemple marchand est **fictif**. Mode d'emploi et prérequis pour brancher Awin / Effiliation : [docs/merchant-offers.md](docs/merchant-offers.md).
