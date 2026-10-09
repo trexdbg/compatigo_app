@@ -26,11 +26,14 @@ def eligible(device: dict) -> bool:
         device.get("verified")
         and device.get("brand")
         and device.get("model")
+        and (str(device.get("brand", "")).lower() != "rowenta"
+             or bool(re.fullmatch(r"(RO|RH|RR|YY|IX|MO)[0-9][A-Z0-9]{3,7}", str(device.get("model", "")), re.I)))
         and any(
             part.get("status") == "verified"
             and any(
                 evidence.get("explicit_relation") is True
                 and evidence.get("source_kind") in OFFICIAL
+                and str(evidence.get("source_url", "")).startswith("https://")
                 for evidence in part.get("evidence", [])
             )
             for part in device.get("parts", [])
@@ -76,6 +79,33 @@ def main() -> None:
     expected_routes += [BASE + slug(d["brand"]) + "/" + slug(d["model"]) + "/" for d in devices]
     if len(expected_routes) != len(set(expected_routes)):
         raise AssertionError("Duplicate page routes")
+
+    # The interactive search must match the published static pages exactly.
+    # The raw agent catalogue is never exposed directly to search results.
+    search_file = DIST / "data/search.json"
+    if not search_file.is_file():
+        raise AssertionError("Missing generated search index")
+    search_data = json.loads(search_file.read_text(encoding="utf-8"))
+    if search_data.get("status") != "verified_catalog":
+        raise AssertionError("Search index is not a verified catalogue")
+    search_devices = search_data.get("devices", [])
+    if not isinstance(search_devices, list):
+        raise AssertionError("Search index devices must be a list")
+    device_keys = {(d["brand"], d["model"]) for d in devices}
+    search_keys = [(d.get("brand"), d.get("model")) for d in search_devices]
+    if len(search_keys) != len(set(search_keys)) or set(search_keys) != device_keys:
+        raise AssertionError("Search index differs from published SEO device pages")
+    for device in search_devices:
+        if device.get("verified") is not True or not device.get("parts"):
+            raise AssertionError("Unverified or empty device in search index")
+        for part in device["parts"]:
+            if part.get("status") != "verified" or not part.get("manufacturer_part_number"):
+                raise AssertionError("Unverified part in search index")
+            if not any(e.get("explicit_relation") is True
+                       and e.get("source_kind") in OFFICIAL
+                       and str(e.get("source_url", "")).startswith("https://")
+                       for e in part.get("evidence", [])):
+                raise AssertionError("Missing official evidence in search index")
 
     tree = ElementTree.parse(DIST / "sitemap.xml")
     locs = [e.text for e in tree.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
