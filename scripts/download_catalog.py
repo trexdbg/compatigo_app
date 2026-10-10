@@ -146,12 +146,15 @@ def main() -> None:
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     by_brand = {}
+    by_type = {}
     for device in devices:
         brand = device["brand"]
         stats = by_brand.setdefault(brand, {"verified_devices": 0, "verified_relations": 0})
         if device["verified"]:
             stats["verified_devices"] += 1
             stats["verified_relations"] += len(device["parts"])
+            kind = device.get("type") or "Non précisé"
+            by_type[kind] = by_type.get(kind, 0) + 1
     unique_parts = {(device["brand"].casefold(), part["manufacturer_part_number"].strip().upper())
                     for device in devices for part in device["parts"]}
     print(f"Imported {len(devices)} candidate devices; "
@@ -159,6 +162,7 @@ def main() -> None:
           f"{sum(s['verified_relations'] for s in by_brand.values())} verified relations; "
           f"{len(unique_parts)} distinct manufacturer consumables.")
     print("Verified brand coverage: " + json.dumps(by_brand, ensure_ascii=False, sort_keys=True))
+    print("Verified device categories: " + json.dumps(by_type, ensure_ascii=False, sort_keys=True))
 
 
 if __name__ == "__main__":
