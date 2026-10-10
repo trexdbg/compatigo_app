@@ -152,9 +152,12 @@ def main() -> None:
         if device["verified"]:
             stats["verified_devices"] += 1
             stats["verified_relations"] += len(device["parts"])
+    unique_parts = {(device["brand"].casefold(), part["manufacturer_part_number"].strip().upper())
+                    for device in devices for part in device["parts"]}
     print(f"Imported {len(devices)} candidate devices; "
           f"{sum(s['verified_devices'] for s in by_brand.values())} verified devices; "
-          f"{sum(s['verified_relations'] for s in by_brand.values())} verified relations.")
+          f"{sum(s['verified_relations'] for s in by_brand.values())} verified relations; "
+          f"{len(unique_parts)} distinct manufacturer consumables.")
     print("Verified brand coverage: " + json.dumps(by_brand, ensure_ascii=False, sort_keys=True))
 
 
