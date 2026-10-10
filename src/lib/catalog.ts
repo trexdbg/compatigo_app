@@ -68,6 +68,18 @@ export function publishedDevices(): Device[] {
     );
 }
 
+/** Labels never imply that a printer toner or ink cartridge is an air filter. */
+export function partKindLabel(kind?: string | null): string {
+  const labels: Record<string, string> = {
+    filter: "Filtre",
+    bag: "Sac aspirateur",
+    ink: "Cartouche d’encre",
+    toner: "Toner",
+    drum: "Tambour",
+  };
+  return labels[kind ?? ""] ?? "Consommable";
+}
+
 export function slug(value: string): string {
   return value
     .normalize("NFD")
