@@ -11,6 +11,7 @@ import os
 import re
 from pathlib import Path
 from urllib.error import HTTPError
+from urllib.parse import urlsplit
 from urllib.request import Request, urlopen, build_opener, HTTPRedirectHandler
 from zipfile import ZipFile
 
@@ -89,6 +90,17 @@ def validate_catalog(catalog: dict) -> list[dict]:
             for e in evidence:
                 if not isinstance(e, dict) or not isinstance(e.get("source_url"), str) or not e["source_url"].startswith("https://"):
                     raise ValueError("Invalid evidence URL")
+                # Coffee-machine parts are imported exclusively from the branded
+                # manufacturer's official product or model-specific support domain.
+                if device.get("type") == "Machine à café":
+                    allowed_hosts = {
+                        "philips": {"www.home-appliances.philips"},
+                        "saeco": {"www.philips.fr"},
+                        "de'longhi": {"www.delonghi.com"},
+                    }
+                    hostname = urlsplit(e["source_url"]).hostname
+                    if hostname not in allowed_hosts.get(brand.strip().casefold(), set()):
+                        raise ValueError(f"Invalid coffee manufacturer source: {brand} {model}")
             verified += 1
 
     if not verified:
