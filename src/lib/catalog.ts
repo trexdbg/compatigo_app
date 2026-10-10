@@ -76,6 +76,7 @@ export function partKindLabel(kind?: string | null): string {
     ink: "Cartouche d’encre",
     toner: "Toner",
     drum: "Tambour",
+    descaler: "Détartrant",
   };
   return labels[kind ?? ""] ?? "Consommable";
 }
