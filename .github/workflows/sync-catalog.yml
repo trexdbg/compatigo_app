@@ -16,13 +16,16 @@ permissions:
   id-token: write
 
 concurrency:
-  group: catalog-sync
+  group: pages
   cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -48,3 +51,19 @@ jobs:
             git commit -m "data: sync verified compatibility catalog"
             git push
           fi
+      # A push performed with GITHUB_TOKEN does NOT trigger another push workflow.
+      # Deploy the freshly synchronized working tree in this very run.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install frontend dependencies
+        run: npm install
+      - name: Build synchronized static site
+        run: npm run build
+      - name: Validate generated SEO pages
+        run: python3 scripts/check_seo_build.py
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
