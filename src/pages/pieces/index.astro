@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { partPath, publishedParts, sitePath } from "../../lib/catalog";
+import { partPath, publishedParts, sitePath, partKindLabel } from "../../lib/catalog";
 const parts = publishedParts();
 const title = "Filtres et consommables référencés par fabricant | Compatigo";
 const description = "Parcourez les références de filtres et consommables dont la compatibilité avec des appareils a été confirmée par une source constructeur.";
@@ -18,14 +18,14 @@ const structuredData = {
     <nav class="crumbs" aria-label="Fil d’Ariane"><a href={sitePath()}>Accueil</a><span>/</span><span aria-current="page">Consommables</span></nav>
     <section class="intro">
       <span class="eyebrow">LES RÉFÉRENCES CONSTRUCTEUR</span>
-      <h1>Vos filtres.<br/><em>Les bonnes références.</em></h1>
+      <h1>Vos consommables.<br/><em>Les bonnes références.</em></h1>
       <p>Choisissez une référence de consommable pour connaître les appareils avec lesquels sa compatibilité a été explicitement confirmée par le fabricant. Les liens vers les preuves sont indiqués sur chaque fiche.</p>
       <p class="count">{parts.length} référence{parts.length > 1 ? "s" : ""} vérifiée{parts.length > 1 ? "s" : ""}</p>
     </section>
     <section class="grid" aria-label="Consommables vérifiés">
       {parts.map((part) => (
         <a class="part" href={partPath(part.brand, part.reference)}>
-          <span class="kind">{part.kind === "bag" ? "Sac" : "Filtre"} · {part.brand}</span>
+          <span class="kind">{partKindLabel(part.kind)} · {part.brand}</span>
           <strong>{part.reference}</strong>
           {part.name && <small class="name">{part.name}</small>}
           <span class="bottom">{part.devices.length} appareil{part.devices.length > 1 ? "s" : ""} compatible{part.devices.length > 1 ? "s" : ""} <b>↗</b></span>
