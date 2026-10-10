@@ -77,6 +77,7 @@ export function partKindLabel(kind?: string | null): string {
     toner: "Toner",
     drum: "Tambour",
     descaler: "Détartrant",
+    spare_part: "Pièce de rechange",
   };
   return labels[kind ?? ""] ?? "Consommable";
 }
