@@ -75,5 +75,26 @@ class CatalogValidationTests(unittest.TestCase):
             validate_catalog(catalog)
 
 
+    def test_accepts_official_canon_and_brother_proofs(self):
+        for brand, model, url in (
+            ("Canon", "TS5350", "https://www.canon.fr/store/canon-cartouche-pg-560/"),
+            ("Brother", "HL-L2340DW", "https://store.brother.fr/consommables/laser/toner/tn/tn2310"),
+        ):
+            with self.subTest(brand=brand):
+                catalog = good_catalog()
+                device = catalog["devices"][0]
+                device.update(brand=brand, model=model, type="Imprimante")
+                device["parts"][0]["evidence"][0]["source_url"] = url
+                self.assertEqual(len(validate_catalog(catalog)), 1)
+
+    def test_rejects_retailers_spoofing_official_printer_proof(self):
+        catalog = good_catalog()
+        device = catalog["devices"][0]
+        device.update(brand="Canon", model="TS5350", type="Imprimante")
+        device["parts"][0]["evidence"][0]["source_url"] = "https://marketplace.example.com/store/canon-pg-560"
+        with self.assertRaisesRegex(ValueError, "Non-manufacturer printer proof"):
+            validate_catalog(catalog)
+
+
 if __name__ == "__main__":
     unittest.main()

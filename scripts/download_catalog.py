@@ -90,6 +90,19 @@ def validate_catalog(catalog: dict) -> list[dict]:
             for e in evidence:
                 if not isinstance(e, dict) or not isinstance(e.get("source_url"), str) or not e["source_url"].startswith("https://"):
                     raise ValueError("Invalid evidence URL")
+                # Printer proofs must point to the exact manufacturer's official
+                # domain; a marketplace cannot masquerade as manufacturer evidence.
+                if device.get("type") == "Imprimante":
+                    printer_hosts = {
+                        "canon": {"www.canon.fr"},
+                        "brother": {"store.brother.fr"},
+                    }
+                    expected_hosts = printer_hosts.get(brand.strip().casefold())
+                    if expected_hosts is None:
+                        raise ValueError(f"Unknown printer manufacturer: {brand}")
+                    if (e.get("source_kind") in OFFICIAL_EVIDENCE
+                            and urlsplit(e["source_url"]).hostname not in expected_hosts):
+                        raise ValueError(f"Non-manufacturer printer proof: {brand} {model}")
                 # Coffee-machine parts are imported exclusively from the branded
                 # manufacturer's official product or model-specific support domain.
                 if device.get("type") == "Machine à café":
