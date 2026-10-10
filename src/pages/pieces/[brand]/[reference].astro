@@ -2,7 +2,7 @@
 import Layout from "../../../layouts/Layout.astro";
 import {
   brandPath, catalogDate, devicePath, partPath, publishedParts,
-  sitePath, slug, type PublishedPart,
+  sitePath, slug, partKindLabel, type PublishedPart,
 } from "../../../lib/catalog";
 
 export function getStaticPaths() {
@@ -19,7 +19,7 @@ export function getStaticPaths() {
 }
 
 const { part } = Astro.props as { part: PublishedPart };
-const partName = part.kind === "bag" ? "Sac" : "Filtre";
+const partName = partKindLabel(part.kind);
 const title = partName + " " + part.reference + " " + part.brand + " : appareils compatibles | Compatigo";
 const description = part.reference + " : " + part.devices.length +
   " appareil(s) " + part.brand + " identifiés comme compatibles d'après les sources constructeur. Références et preuves consultables.";
@@ -81,7 +81,7 @@ const structuredData = {
     </section>
     <section class="section" aria-labelledby="devices-title">
       <h2 id="devices-title">Quels appareils utilisent la référence {part.reference} ?</h2>
-      <p>Chaque fiche détaille les autres filtres ou pièces de remplacement vérifiés pour ce modèle.</p>
+      <p>Chaque fiche détaille les autres consommables et pièces de remplacement vérifiés pour ce modèle.</p>
       <div class="device-grid">
         {part.devices.map((device) => (
           <a class="device" href={devicePath(device)}>
