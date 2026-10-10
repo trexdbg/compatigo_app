@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import {
   brandPath, catalogDate, devicePath, partPath, officialProofs, publishedDevices,
-  slug, sitePath, verifiedParts, type Device,
+  slug, sitePath, verifiedParts, partKindLabel, type Device,
 } from "../../lib/catalog";
 
 export function getStaticPaths() {
@@ -21,7 +21,7 @@ export function getStaticPaths() {
 const { device } = Astro.props as { device: Device };
 const parts = verifiedParts(device);
 const name = device.brand + " " + device.model;
-const title = "Filtre " + name + " : " + parts.map((p) => p.manufacturer_part_number).join(", ") + " | Compatigo";
+const title = "Consommables pour " + name + " : " + parts.map((p) => p.manufacturer_part_number).join(", ") + " | Compatigo";
 const description = "Consommables compatibles avec " + name + " : références " +
   parts.map((p) => p.manufacturer_part_number).join(", ") +
   ". Sources constructeur et preuves de compatibilité consultables.";
@@ -85,7 +85,7 @@ const structuredData = {
     </nav>
     <section class="intro">
       <div class="kicker"><span class="green-dot"></span> CORRESPONDANCES SOURCÉES</div>
-      <h1>Les filtres compatibles avec <em>{name}</em></h1>
+      <h1>Les consommables compatibles avec <em>{name}</em></h1>
       <p>Voici les références de consommables reliées à votre {device.type?.toLowerCase() || "appareil"} dans les listes officielles du fabricant. Chaque correspondance possède un lien vers sa source.</p>
       <div class="summary">
         <div><strong>{parts.length}</strong><span>référence{parts.length > 1 ? "s" : ""} vérifiée{parts.length > 1 ? "s" : ""}</span></div>
@@ -104,7 +104,7 @@ const structuredData = {
           <article class="part-card">
             <div class="part-index">{String(i + 1).padStart(2, "0")}</div>
             <div class="part-main">
-              <div class="part-topline"><span class="tag">✓ Compatibilité vérifiée</span><span class="kind">{part.consumable_type === "filter" ? "Filtre" : part.consumable_type === "bag" ? "Sac aspirateur" : "Consommable"}</span></div>
+              <div class="part-topline"><span class="tag">✓ Compatibilité vérifiée</span><span class="kind">{partKindLabel(part.consumable_type)}</span></div>
               <h3><a href={partPath(device.brand, part.manufacturer_part_number)}>{part.manufacturer_part_number} ↗</a></h3>
               {part.consumable_name && <p class="part-name">{part.consumable_name}</p>}
               <p class="match">Compatible avec <strong>{name}</strong> selon la liste du fabricant.</p>
@@ -141,7 +141,7 @@ const structuredData = {
       </div>
     </section>}
 
-    <div class="back"><a href={brandPath(device.brand)}>← Voir les autres appareils {device.brand}</a><a href={sitePath("pieces/")}>Tous les filtres vérifiés →</a><a href={sitePath("#rechercher")}>Rechercher une autre référence →</a></div>
+    <div class="back"><a href={brandPath(device.brand)}>← Voir les autres appareils {device.brand}</a><a href={sitePath("pieces/")}>Tous les consommables vérifiés →</a><a href={sitePath("#rechercher")}>Rechercher une autre référence →</a></div>
   </main>
   <footer class="footer"><div class="container"><strong>compatigo.</strong><span>Le bon consommable. Pour le bon appareil.</span><p>Compatigo est indépendant et ne vend pas les produits. Les correspondances reposent sur les références des constructeurs et peuvent évoluer. {catalogDate && "Catalogue mis à jour le " + new Date(catalogDate + "T12:00:00Z").toLocaleDateString("fr-FR") + "."}</p></div></footer>
 </Layout>
