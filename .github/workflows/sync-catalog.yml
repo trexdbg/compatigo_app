@@ -48,36 +48,3 @@ jobs:
             git commit -m "data: sync verified compatibility catalog"
             git push
           fi
-
-  build:
-    needs: sync
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: Install dependencies
-        run: npm install
-      - name: Build updated catalog site
-        run: npm run build
-      - name: Validate generated SEO pages
-        run: python3 scripts/check_seo_build.py
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    concurrency:
-      group: pages
-      cancel-in-progress: false
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
