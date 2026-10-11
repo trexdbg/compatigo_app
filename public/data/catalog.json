@@ -1,8 +1,108 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-11T10:55:02.050135+00:00",
+  "updated_at": "2026-10-11T15:08:55.031645+00:00",
   "status": "verified_catalog",
   "devices": [
+    {
+      "brand": "Rowenta",
+      "model": "RH1831E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\nnt, 100 AW, 45 min\nRH1833E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1831E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1832E0\n--\nIndisponible\nX-",
+              "retrieved_at": "2026-10-11T15:08:00.191118+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH1832E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\nnt, 100 AW, 45 min\nRH1831E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1832E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1872E0\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.191161+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH1833E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\nces, 150 W, 40 min\nRH5A31E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1833E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1831E0\n--\nIndisponible\nX-",
+              "retrieved_at": "2026-10-11T15:08:00.191183+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH1872E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\nnt, 100 AW, 45 min\nRH1832E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1872E0\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.191203+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
     {
       "brand": "Rowenta",
       "model": "RH2036WO",
@@ -21,7 +121,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\n Jusqu'à 45 min, Allergie\nRH6A82WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2036WO\n--\nIndisponible\nXForce Flex 9.60 Cordless Vacuum Cleaner, Animal Care Model\nRH2077WO\n--\nIndisponible\nX-Force Flex 9.60,",
-              "retrieved_at": "2026-10-11T10:53:35.490772+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121138+00:00",
               "explicit_relation": true
             }
           ]
@@ -38,7 +138,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\nl, 100AW, 45min, Allergie\nRH2038WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2036WO\n--\nIndisponible\nX-FORCE FLEX 9.60 KIT ALLERGIE\nRH2039WO\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, ",
-              "retrieved_at": "2026-10-11T10:53:35.316182+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893071+00:00",
               "explicit_relation": true
             }
           ]
@@ -63,7 +163,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\nce Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2038WO\n--\nIndisponible\nX-FORCE FLEX 9.60 KIT ALLERGIE\nRH2037WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai laveur sans fil, Multifonction, Modèle Aqua\nRH20C2WO\n--\nIndisponibl",
-              "retrieved_at": "2026-10-11T10:53:35.490799+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121180+00:00",
               "explicit_relation": true
             }
           ]
@@ -80,7 +180,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\nrez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-FORCE FLEX 9.60 KIT ALLERGIE\nRH2037WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2038WO\n--\nIndisponible\nX-Force F",
-              "retrieved_at": "2026-10-11T10:53:35.316211+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893111+00:00",
               "explicit_relation": true
             }
           ]
@@ -105,7 +205,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\nleaner, Animal Care Model\nRH2077WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2038WO\n--\nIndisponible\nX-FORCE FLEX 9.60 KIT ALLERGIE\nRH2037WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai laveur sans",
-              "retrieved_at": "2026-10-11T10:53:35.490814+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121201+00:00",
               "explicit_relation": true
             }
           ]
@@ -122,7 +222,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\nCE FLEX 9.60 KIT ALLERGIE\nRH2037WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2038WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2036WO\n--\nIndisponible\nX-FORCE F",
-              "retrieved_at": "2026-10-11T10:53:35.316231+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893143+00:00",
               "explicit_relation": true
             }
           ]
@@ -147,7 +247,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\nce Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2036WO\n--\nIndisponible\nX-FORCE FLEX 9.60 KIT ALLERGIE\nRH2039WO\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, Aspiration en profondeur, 120 AW, 60 min\nRH7A32E0\n--\nInd",
-              "retrieved_at": "2026-10-11T10:53:35.316245+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893162+00:00",
               "explicit_relation": true
             }
           ]
@@ -172,7 +272,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\ni sans fil, 100AW, 45min, Allergie\nRH2036WO\n--\nIndisponible\nXForce Flex 9.60 Cordless Vacuum Cleaner, Animal Care Model\nRH2077WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2038WO\n--\nIndisponible\nX-FORCE F",
-              "retrieved_at": "2026-10-11T10:53:35.490829+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121221+00:00",
               "explicit_relation": true
             }
           ]
@@ -197,7 +297,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\nférez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-FORCE FLEX 9.60 KIT ANIMAL\nRH2079WO\n--\nIndisponible\nX-Pert 7.60, Aspirateur balai sans fil, 140W, Jusqu'à 45 min, Idéal poils d'animaux\nRH6A71WO\n--\nIndispo",
-              "retrieved_at": "2026-10-11T10:53:35.490842+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121239+00:00",
               "explicit_relation": true
             }
           ]
@@ -222,7 +322,82 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\n0 KIT ALLERGIE\nRH2037WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai laveur sans fil, Multifonction, Modèle Aqua\nRH20C2WO\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.490856+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121255+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH5A21E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\n\nProduit\nRéférence\nCatégorie\nX-Pert 5.80, Aspirateur balai sans fil, Performances de nettoyage efficaces, 150 W, 40 min\nRH5A21E0\n--\nIndisponible\nX-Pert 5.80, Aspirateur balai sans fil, Performances de nettoyage efficaces, 150 W, 40 min\nRH5A21E0\n--\n",
+              "retrieved_at": "2026-10-11T15:08:00.191228+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH5A31E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\nmin\nRH5A32E0\n--\nIndisponible\nX-Pert 5.80, Aspirateur balai sans fil, Performances de nettoyage efficaces, 150 W, 40 min\nRH5A31E0\n--\nIndisponible\nX-Force 8.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 45 min\nRH1833E0\n--\nIndisponible\nX-",
+              "retrieved_at": "2026-10-11T15:08:00.191246+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH5A32E0",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR009016",
+          "consumable_name": "Filtre séparateur ZR009016 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-zr009016/a/7235008332",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre séparateur ZR009016 | Rowenta",
+              "excerpt": "Ref: ZR009016\nmin\nRH5A21E0\n--\nIndisponible\nX-Pert 5.80, Aspirateur balai sans fil, Performances de nettoyage efficaces, 150 W, 40 min\nRH5A32E0\n--\nIndisponible\nX-Pert 5.80, Aspirateur balai sans fil, Performances de nettoyage efficaces, 150 W, 40 min\nRH5A32E0\n--\n",
+              "retrieved_at": "2026-10-11T15:08:00.191263+00:00",
               "explicit_relation": true
             }
           ]
@@ -247,7 +422,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\n 3.60\nRH6933WO\n--\nIndisponible\nX-Pert 3.60, Aspirateur balai sans fil, Multifonction, Autonomie 45 minutes, Ultra léger\nRH6921WO\n--\nIndisponible\nX-PERT 3.60\nRH6973WO\n--\nIndisponible\nX-Pert 160\nRH7221WO\n--\nIndisponible\nX-PERT 3.60\nRH6972WO\n--\nIndisp",
-              "retrieved_at": "2026-10-11T10:53:35.894994+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601632+00:00",
               "explicit_relation": true
             }
           ]
@@ -272,7 +447,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\nduit ?\nProduit\nRéférence\nCatégorie\nX-PERT 3.60\nRH6974WO\n--\nIndisponible\nX-Pert 160\nRH7233WO\n--\nIndisponible\nX-PERT 3.60\nRH6933WO\n--\nIndisponible\nX-Pert 3.60, Aspirateur balai sans fil, Multifonction, Autonomie 45 minutes, Ultra léger\nRH6921WO\n--\nIn",
-              "retrieved_at": "2026-10-11T10:53:35.895019+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601686+00:00",
               "explicit_relation": true
             }
           ]
@@ -297,7 +472,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\nPert 160\nRH7221WO\n--\nIndisponible\nX-PERT 3.60\nRH6972WO\n--\nIndisponible\nX-PERT 3.60\nRH6985WO\n--\nIndisponible\nX-PERT 3.60\nRH6971WO\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.895031+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601704+00:00",
               "explicit_relation": true
             }
           ]
@@ -322,7 +497,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\ntra léger\nRH6921WO\n--\nIndisponible\nX-PERT 3.60\nRH6973WO\n--\nIndisponible\nX-Pert 160\nRH7221WO\n--\nIndisponible\nX-PERT 3.60\nRH6972WO\n--\nIndisponible\nX-PERT 3.60\nRH6985WO\n--\nIndisponible\nX-PERT 3.60\nRH6971WO\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.895043+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601720+00:00",
               "explicit_relation": true
             }
           ]
@@ -347,7 +522,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\n 3.60, Aspirateur balai sans fil, Multifonction, Autonomie 45 minutes, Ultra léger\nRH6921WO\n--\nIndisponible\nX-PERT 3.60\nRH6973WO\n--\nIndisponible\nX-Pert 160\nRH7221WO\n--\nIndisponible\nX-PERT 3.60\nRH6972WO\n--\nIndisponible\nX-PERT 3.60\nRH6985WO\n--\nIndisp",
-              "retrieved_at": "2026-10-11T10:53:35.895054+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601735+00:00",
               "explicit_relation": true
             }
           ]
@@ -372,7 +547,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\nessous ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-PERT 3.60\nRH6974WO\n--\nIndisponible\nX-Pert 160\nRH7233WO\n--\nIndisponible\nX-PERT 3.60\nRH6933WO\n--\nIndisponible\nX-Pert 3.60, Aspirateur balai ",
-              "retrieved_at": "2026-10-11T10:53:35.895066+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601754+00:00",
               "explicit_relation": true
             }
           ]
@@ -397,7 +572,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\nPERT 3.60\nRH6973WO\n--\nIndisponible\nX-Pert 160\nRH7221WO\n--\nIndisponible\nX-PERT 3.60\nRH6972WO\n--\nIndisponible\nX-PERT 3.60\nRH6985WO\n--\nIndisponible\nX-PERT 3.60\nRH6971WO\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.895077+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601769+00:00",
               "explicit_relation": true
             }
           ]
@@ -422,7 +597,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\nal poils d'animaux\nRH6A71WO\n--\nIndisponible\nX-Pert 7.60, Aspirateur balai sans fil, 140 watts, Jusqu'à 45 min, Allergie\nRH6A37WO\n--\nIndisponible\nX-Pert Flex 7.60, Aspirateur balai sans fil, 140 watts, Jusqu'à 45 min, Allergie\nRH6A82WO\n--\nIndisponib",
-              "retrieved_at": "2026-10-11T10:53:35.490873+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121282+00:00",
               "explicit_relation": true
             }
           ]
@@ -447,7 +622,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\nKIT ANIMAL\nRH2079WO\n--\nIndisponible\nX-Pert 7.60, Aspirateur balai sans fil, 140W, Jusqu'à 45 min, Idéal poils d'animaux\nRH6A71WO\n--\nIndisponible\nX-Pert 7.60, Aspirateur balai sans fil, 140 watts, Jusqu'à 45 min, Allergie\nRH6A37WO\n--\nIndisponible\nX-",
-              "retrieved_at": "2026-10-11T10:53:35.490886+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121299+00:00",
               "explicit_relation": true
             }
           ]
@@ -472,7 +647,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse ZR009010 | Rowenta",
               "excerpt": "Ref: ZR009010\nmin, Allergie\nRH6A37WO\n--\nIndisponible\nX-Pert Flex 7.60, Aspirateur balai sans fil, 140 watts, Jusqu'à 45 min, Allergie\nRH6A82WO\n--\nIndisponible\nX-Force Flex 9.60, Aspirateur balai sans fil, 100AW, 45min, Allergie\nRH2036WO\n--\nIndisponible\nXForce Fl",
-              "retrieved_at": "2026-10-11T10:53:35.490899+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.121314+00:00",
               "explicit_relation": true
             }
           ]
@@ -497,7 +672,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\nltifonction, Autonomie 45 minutes, Ultra léger\nRH6921WO\n--\nIndisponible\nX-PERT 3.60\nRH6973WO\n--\nIndisponible\nX-Pert 160\nRH7221WO\n--\nIndisponible\nX-PERT 3.60\nRH6972WO\n--\nIndisponible\nX-PERT 3.60\nRH6985WO\n--\nIndisponible\nX-PERT 3.60\nRH6971WO\n--\nIndis",
-              "retrieved_at": "2026-10-11T10:53:35.895089+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601786+00:00",
               "explicit_relation": true
             }
           ]
@@ -522,7 +697,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre lavable ZR005202 | Rowenta",
               "excerpt": "Ref: ZR005202\nmment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-PERT 3.60\nRH6974WO\n--\nIndisponible\nX-Pert 160\nRH7233WO\n--\nIndisponible\nX-PERT 3.60\nRH6933WO\n--\nIndisponible\nX-Pert 3.60, Aspirateur balai sans fil, Multifonction, Autonomie 4",
-              "retrieved_at": "2026-10-11T10:53:35.895099+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.601800+00:00",
               "explicit_relation": true
             }
           ]
@@ -547,7 +722,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\n \"ALL FLOORS & ANIMAL CARE\"\nRH9081WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7331WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7324WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9089WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & PLUS\"\nRH9",
-              "retrieved_at": "2026-10-11T10:53:35.731984+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379242+00:00",
               "explicit_relation": true
             }
           ]
@@ -572,7 +747,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\nFLOORS & PLUS\"\nRH9051WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & PLUS\"\nRH9051WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7329WO\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.732009+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379277+00:00",
               "explicit_relation": true
             }
           ]
@@ -597,7 +772,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\nFLOORS\"\nRH9037WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9081WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7331WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7324WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9089WO\n--\nIndi",
-              "retrieved_at": "2026-10-11T10:53:35.732022+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379295+00:00",
               "explicit_relation": true
             }
           ]
@@ -622,7 +797,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 5 sacs aspirateur filtrants et 2 filtres ZR005001 | Rowenta",
               "excerpt": "Ref: ZR005001\n-dessous ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nPOWERLINE\nRH7666IA\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.638931+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.950345+00:00",
               "explicit_relation": true
             }
           ]
@@ -647,7 +822,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\nLERGIE\nRH2039WO\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, Aspiration en profondeur, 120 AW, 60 min\nRH7A32E0\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, Aspiration en profondeur, 120 AW, 60 min\nRH7A36E0\n--\nInd",
-              "retrieved_at": "2026-10-11T10:53:35.316270+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893199+00:00",
               "explicit_relation": true
             }
           ]
@@ -672,7 +847,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\n0 AW, 80 min\nRH7L35E0\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, Nettoyage puissant, 120 AW, 60 min\nRH7A35E0\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, 120 AW, 60 min, Modèle Animal\nRH7A73E0\n--\nIndisponible\nV",
-              "retrieved_at": "2026-10-11T10:53:35.316284+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893216+00:00",
               "explicit_relation": true
             }
           ]
@@ -697,7 +872,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\n60 min\nRH7A32E0\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, Aspiration en profondeur, 120 AW, 60 min\nRH7A36E0\n--\nIndisponible\nX-Force Flex 9.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 80 min\nRH7L35E0\n--\nIndisponib",
-              "retrieved_at": "2026-10-11T10:53:35.316298+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893236+00:00",
               "explicit_relation": true
             }
           ]
@@ -722,7 +897,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\nt, 120 AW, 60 min\nRH7A35E0\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, 120 AW, 60 min, Modèle Animal\nRH7A73E0\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.316311+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893253+00:00",
               "explicit_relation": true
             }
           ]
@@ -747,7 +922,32 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009012 | Rowenta",
               "excerpt": "Ref: ZR009012\n20 AW, 60 min\nRH7A36E0\n--\nIndisponible\nX-Force Flex 9.80, Aspirateur balai sans fil, Nettoyage puissant, 100 AW, 80 min\nRH7L35E0\n--\nIndisponible\nX-Force Flex 10.80, Aspirateur balai sans fil, Nettoyage puissant, 120 AW, 60 min\nRH7A35E0\n--\nIndisponi",
-              "retrieved_at": "2026-10-11T10:53:35.316326+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.893272+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RH8121WB",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\n la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCOMPACT POWER XXL\nRO4853EA\n--\nIndisponible\nPOWERLINE EXTREME\nRH8121WB\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3725EA\n--\nIndisponible\nC",
+              "retrieved_at": "2026-10-11T15:08:01.468446+00:00",
               "explicit_relation": true
             }
           ]
@@ -772,7 +972,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\néférence de mon produit ?\nProduit\nRéférence\nCatégorie\nAIR FORCE 360\nRH9086WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS\"\nRH9037WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9081WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7331WO\n--\nIndi",
-              "retrieved_at": "2026-10-11T10:53:35.732038+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379319+00:00",
               "explicit_relation": true
             }
           ]
@@ -797,7 +997,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\n4WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9089WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & PLUS\"\nRH9051WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & PLUS\"\nRH9051WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7329WO\n--\nIndisponibl",
-              "retrieved_at": "2026-10-11T10:53:35.732050+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379335+00:00",
               "explicit_relation": true
             }
           ]
@@ -822,7 +1022,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\n0\nRH9086WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS\"\nRH9037WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9081WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7331WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7324WO\n--\nIndisponible\nAIR FORCE 3",
-              "retrieved_at": "2026-10-11T10:53:35.732060+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379349+00:00",
               "explicit_relation": true
             }
           ]
@@ -847,7 +1047,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\nsous ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nAIR FORCE 360\nRH9086WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS\"\nRH9037WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9081WO\n-",
-              "retrieved_at": "2026-10-11T10:53:35.732072+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379371+00:00",
               "explicit_relation": true
             }
           ]
@@ -872,7 +1072,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse pour aspirateur ZR009001 | Rowenta",
               "excerpt": "Ref: ZR009001\nIAL 260\nRH7331WO\n--\nIndisponible\nX-PERT ESSENTIAL 260\nRH7324WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & ANIMAL CARE\"\nRH9089WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & PLUS\"\nRH9051WO\n--\nIndisponible\nAIR FORCE 360 \"ALL FLOORS & PLUS\"\nRH9051WO\n-",
-              "retrieved_at": "2026-10-11T10:53:35.732083+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.379385+00:00",
               "explicit_relation": true
             }
           ]
@@ -897,7 +1097,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur ZR009003 | Rowenta",
               "excerpt": "Ref: ZR009003\na référence de mon produit ?\nProduit\nRéférence\nCatégorie\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX 760 AQUA\nRH9590WO\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.299696+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.097974+00:00",
               "explicit_relation": true
             }
           ]
@@ -914,7 +1114,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009004 | Rowenta",
               "excerpt": "Ref: ZR009004\nou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX ",
-              "retrieved_at": "2026-10-11T10:53:38.260325+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.470410+00:00",
               "explicit_relation": true
             }
           ]
@@ -939,7 +1139,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur ZR009003 | Rowenta",
               "excerpt": "Ref: ZR009003\nce\nCatégorie\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX 760 AQUA\nRH9590WO\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.299719+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.098011+00:00",
               "explicit_relation": true
             }
           ]
@@ -956,7 +1156,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009004 | Rowenta",
               "excerpt": "Ref: ZR009004\nce\nCatégorie\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX 760 AQUA\nRH9590WO\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.260355+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.470466+00:00",
               "explicit_relation": true
             }
           ]
@@ -981,7 +1181,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur ZR009003 | Rowenta",
               "excerpt": "Ref: ZR009003\nou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX ",
-              "retrieved_at": "2026-10-11T10:53:36.299731+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.098029+00:00",
               "explicit_relation": true
             }
           ]
@@ -998,7 +1198,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009004 | Rowenta",
               "excerpt": "Ref: ZR009004\na référence de mon produit ?\nProduit\nRéférence\nCatégorie\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX 760 AQUA\nRH9590WO\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.260367+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.470484+00:00",
               "explicit_relation": true
             }
           ]
@@ -1023,7 +1223,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur ZR009003 | Rowenta",
               "excerpt": "Ref: ZR009003\nponible\nAIR·FORCE·FLEX 760\nRH9571WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX 760 AQUA\nRH9590WO\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.299745+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.098057+00:00",
               "explicit_relation": true
             }
           ]
@@ -1040,7 +1240,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après moteur ZR009004 | Rowenta",
               "excerpt": "Ref: ZR009004\nponible\nAIR·FORCE·FLEX 760\nRH9574WO\n--\nIndisponible\nAIR FORCE FLEX 760\nRH9572WO\n--\nIndisponible\nAIR FORCE FLEX 760 AQUA\nRH9590WO\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.260377+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.470498+00:00",
               "explicit_relation": true
             }
           ]
@@ -1065,7 +1265,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\nModèle Allergie\nRH9A32WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Modèle Allergie\nRH9A30WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Modèle Allergie\nRH9A36WV\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:34.710717+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156772+00:00",
               "explicit_relation": true
             }
           ]
@@ -1090,7 +1290,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\n Allergie, Aqua\nRH9LC0WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Modèle Allergie\nRH9A32WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Modèle Allergie\nRH9A30WO\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:34.710749+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156822+00:00",
               "explicit_relation": true
             }
           ]
@@ -1115,7 +1315,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\nModèle Allergie\nRH9A30WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Modèle Allergie\nRH9A36WV\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Animaux\nRH9A76E0\n--\nIndisponible\nVoir pl",
-              "retrieved_at": "2026-10-11T10:53:34.710768+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156849+00:00",
               "explicit_relation": true
             }
           ]
@@ -1140,7 +1340,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\n0AW, 60 min, Animal\nRH9L42WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Kit voiture\nRH9A46WO\n--\nIndisponible\nX-Force Flex 12.60 Neo, Aspirateur balai laveur sans fil, 150 AW, 60 min, Allergie, Aqua\nRH9LC0WO\n--\nIn",
-              "retrieved_at": "2026-10-11T10:53:34.710783+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156868+00:00",
               "explicit_relation": true
             }
           ]
@@ -1165,7 +1365,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\nnce de mon produit ?\nProduit\nRéférence\nCatégorie\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Animaux\nRH9A73WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Tête aqua\nRH9AD1WO\n--\nIndisponible\nX-For",
-              "retrieved_at": "2026-10-11T10:53:34.710801+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156890+00:00",
               "explicit_relation": true
             }
           ]
@@ -1190,7 +1390,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\n60 min, Modèle Allergie\nRH9A36WV\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Animaux\nRH9A76E0\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:34.710815+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156909+00:00",
               "explicit_relation": true
             }
           ]
@@ -1215,7 +1415,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\n0 AW, 60 min, Animaux\nRH9A73WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Tête aqua\nRH9AD1WO\n--\nIndisponible\nX-Force Flex 12.60 Neo, Aspirateur balai sans fil, 150AW, 60 min, Animal\nRH9L42WO\n--\nIndisponible\nX-For",
-              "retrieved_at": "2026-10-11T10:53:34.710829+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156926+00:00",
               "explicit_relation": true
             }
           ]
@@ -1240,7 +1440,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\nAW, 60 min, Tête aqua\nRH9AD1WO\n--\nIndisponible\nX-Force Flex 12.60 Neo, Aspirateur balai sans fil, 150AW, 60 min, Animal\nRH9L42WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Kit voiture\nRH9A46WO\n--\nIndisponible\nX-F",
-              "retrieved_at": "2026-10-11T10:53:34.710843+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156942+00:00",
               "explicit_relation": true
             }
           ]
@@ -1265,7 +1465,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre après-moteur ZR009015 | Rowenta",
               "excerpt": "Ref: ZR009015\niture\nRH9A46WO\n--\nIndisponible\nX-Force Flex 12.60 Neo, Aspirateur balai laveur sans fil, 150 AW, 60 min, Allergie, Aqua\nRH9LC0WO\n--\nIndisponible\nX-Force Flex 13.60, Aspirateur balai sans fil, 150 AW, 60 min, Modèle Allergie\nRH9A32WO\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:34.710858+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.156962+00:00",
               "explicit_relation": true
             }
           ]
@@ -1290,7 +1490,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre haute performance ZR002101 | Rowenta",
               "excerpt": "Ref: ZR002101\nt trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSpaceo Allergy Care\nRO1671FA\n--\nIndisponible\nSpaceo\nRO162011\n--\nIndisponible\nSpaceo\nRO1660FA\n--\nIndisponible\nSpaceo Allergy Care\nRO167111\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.057571+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.836105+00:00",
               "explicit_relation": true
             }
           ]
@@ -1315,7 +1515,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre haute performance ZR002101 | Rowenta",
               "excerpt": "Ref: ZR002101\noduit ?\nProduit\nRéférence\nCatégorie\nSpaceo Allergy Care\nRO1671FA\n--\nIndisponible\nSpaceo\nRO162011\n--\nIndisponible\nSpaceo\nRO1660FA\n--\nIndisponible\nSpaceo Allergy Care\nRO167111\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.057594+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.836144+00:00",
               "explicit_relation": true
             }
           ]
@@ -1340,7 +1540,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre haute performance ZR002101 | Rowenta",
               "excerpt": "Ref: ZR002101\nlergy Care\nRO1671FA\n--\nIndisponible\nSpaceo\nRO162011\n--\nIndisponible\nSpaceo\nRO1660FA\n--\nIndisponible\nSpaceo Allergy Care\nRO167111\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.057608+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.836163+00:00",
               "explicit_relation": true
             }
           ]
@@ -1365,7 +1565,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre haute performance ZR002101 | Rowenta",
               "excerpt": "Ref: ZR002101\nu vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSpaceo Allergy Care\nRO1671FA\n--\nIndisponible\nSpaceo\nRO162011\n--\nIndisponible\nSpaceo\nRO1660FA\n--\nIndisponible\nSpaceo Allergy Care\nRO167111\n--\nIndispo",
-              "retrieved_at": "2026-10-11T10:53:36.057617+00:00",
+              "retrieved_at": "2026-10-11T15:07:55.836179+00:00",
               "explicit_relation": true
             }
           ]
@@ -1390,7 +1590,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre FS-9100037984 | Rowenta",
               "excerpt": "Ref: FS-9100037984\n\nCity Space\nYY5019FE\n--\nIndisponible\nCity Space\nRO2645EA\n--\nIndisponible\nCity Space\nRO2614EA\n--\nIndisponible\nCity Space\nRO2611EA\n--\nIndisponible\nCity Space\nRO2669EA\n--\nIndisponible\nGarantie\nRetrouvez les conditions de garantie produits\nCentres de R",
-              "retrieved_at": "2026-10-11T10:53:37.463156+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.535975+00:00",
               "explicit_relation": true
             }
           ]
@@ -1415,7 +1615,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre FS-9100037984 | Rowenta",
               "excerpt": "Ref: FS-9100037984\nroduit ?\nProduit\nRéférence\nCatégorie\nCity Space\nYY5019FE\n--\nIndisponible\nCity Space\nRO2645EA\n--\nIndisponible\nCity Space\nRO2614EA\n--\nIndisponible\nCity Space\nRO2611EA\n--\nIndisponible\nCity Space\nRO2669EA\n--\nIndisponible\nGarantie\nRetrouvez les conditio",
-              "retrieved_at": "2026-10-11T10:53:37.463187+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.536019+00:00",
               "explicit_relation": true
             }
           ]
@@ -1440,7 +1640,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre FS-9100037984 | Rowenta",
               "excerpt": "Ref: FS-9100037984\nomment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCity Space\nYY5019FE\n--\nIndisponible\nCity Space\nRO2645EA\n--\nIndisponible\nCity Space\nRO2614EA\n--\nIndisponible\nCity Space\nRO2611EA\n--\nIndisponible\nCity Space\nRO2669EA\n--\nIndispon",
-              "retrieved_at": "2026-10-11T10:53:37.463213+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.536057+00:00",
               "explicit_relation": true
             }
           ]
@@ -1465,7 +1665,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre FS-9100037984 | Rowenta",
               "excerpt": "Ref: FS-9100037984\n\nCity Space\nRO2645EA\n--\nIndisponible\nCity Space\nRO2614EA\n--\nIndisponible\nCity Space\nRO2611EA\n--\nIndisponible\nCity Space\nRO2669EA\n--\nIndisponible\nGarantie\nRetrouvez les conditions de garantie produits\nCentres de Réparation\nRetrouvez les centres de r",
-              "retrieved_at": "2026-10-11T10:53:37.463229+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.536078+00:00",
               "explicit_relation": true
             }
           ]
@@ -1490,7 +1690,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\nt, haute filtration\nRO2957EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2910EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 750W, Compact\nRO2913EA\n--\nIndisponible\nSwift Power Cyclonic,",
-              "retrieved_at": "2026-10-11T10:53:34.887179+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394407+00:00",
               "explicit_relation": true
             }
           ]
@@ -1515,7 +1715,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\n sac, 900W, compact, haute filtration\nRO2910EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 750W, Compact\nRO2913EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2933EA\n--\nIndisponible\nSwi",
-              "retrieved_at": "2026-10-11T10:53:34.887205+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394482+00:00",
               "explicit_relation": true
             }
           ]
@@ -1540,7 +1740,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\nt, haute filtration\nRO2917EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2915EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2957EA\n--\nIndisponible\nSwi",
-              "retrieved_at": "2026-10-11T10:53:34.887220+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394505+00:00",
               "explicit_relation": true
             }
           ]
@@ -1565,7 +1765,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\ntration, Kit animal\nRO2940EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2917EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2915EA\n--\nIndisponible\nSwi",
-              "retrieved_at": "2026-10-11T10:53:34.887236+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394524+00:00",
               "explicit_relation": true
             }
           ]
@@ -1590,7 +1790,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\n sac, 750W, Compact\nRO2913EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2933EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2985EA\n--\nIndisponible\nVoi",
-              "retrieved_at": "2026-10-11T10:53:34.887250+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394545+00:00",
               "explicit_relation": true
             }
           ]
@@ -1615,7 +1815,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\nyclonic\nRO2957EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration, Kit animal\nRO2940EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2917EA\n--\nIndisponible\nSwi",
-              "retrieved_at": "2026-10-11T10:53:34.887263+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394561+00:00",
               "explicit_relation": true
             }
           ]
@@ -1640,7 +1840,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\n vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSwift Power Cyclonic\nRO2957EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration, Kit animal\nRO2940EA\n--\nIndi",
-              "retrieved_at": "2026-10-11T10:53:34.887279+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394583+00:00",
               "explicit_relation": true
             }
           ]
@@ -1665,7 +1865,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR904301 | Rowenta",
               "excerpt": "Ref: ZR904301\nt, haute filtration\nRO2933EA\n--\nIndisponible\nSwift Power Cyclonic, Aspirateur sans sac, 900W, compact, haute filtration\nRO2985EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:34.887293+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.394600+00:00",
               "explicit_relation": true
             }
           ]
@@ -1690,7 +1890,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\nible\nPower XXL\nRO3142EA\n--\nIndisponible\nPower XXL\nRO3123EA\n--\nIndisponible\nPower XXL\nYY4473FE\n--\nIndisponible\nPower XXL\nRO3113EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les conditions de garantie produits\nCentres de Réparation\nRetrouvez les",
-              "retrieved_at": "2026-10-11T10:53:37.629275+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752345+00:00",
               "explicit_relation": true
             }
           ]
@@ -1715,7 +1915,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\n4EA\n--\nIndisponible\nPower XXL, Modèle total clean\nRO3187EA\n--\nIndisponible\nPower XXL\nRO3142EA\n--\nIndisponible\nPower XXL\nRO3123EA\n--\nIndisponible\nPower XXL\nYY4473FE\n--\nIndisponible\nPower XXL\nRO3113EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez l",
-              "retrieved_at": "2026-10-11T10:53:37.629307+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752390+00:00",
               "explicit_relation": true
             }
           ]
@@ -1740,7 +1940,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\ner la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nPower XXL, Aspirateur avec sac, 900W, 4,5L, Filtration 99%\nRO3126EA\n--\nIndisponible\nPower XXL, Aspirateur avec sac, 900W max, 4,5L, Filtration 99,98%, Kit animal\nRO3172EA\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:37.629327+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752413+00:00",
               "explicit_relation": true
             }
           ]
@@ -1765,7 +1965,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\n\nPower XXL, Modèle home & car\nRO3154EA\n--\nIndisponible\nPower XXL, Modèle total clean\nRO3187EA\n--\nIndisponible\nPower XXL\nRO3142EA\n--\nIndisponible\nPower XXL\nRO3123EA\n--\nIndisponible\nPower XXL\nYY4473FE\n--\nIndisponible\nPower XXL\nRO3113EA\n--\nIndisponibl",
-              "retrieved_at": "2026-10-11T10:53:37.629346+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752458+00:00",
               "explicit_relation": true
             }
           ]
@@ -1790,7 +1990,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\n, 4,5L, Filtration 99,98%, Kit animal\nRO3172EA\n--\nIndisponible\nPower XXL, Aspirateur avec sac, 900W max, Modèle parquet\nRO3143EA\n--\nIndisponible\nPower XXL, Modèle home & car\nRO3154EA\n--\nIndisponible\nPower XXL, Modèle total clean\nRO3187EA\n--\nIndispo",
-              "retrieved_at": "2026-10-11T10:53:37.629364+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752481+00:00",
               "explicit_relation": true
             }
           ]
@@ -1815,7 +2015,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\nsponible\nPower XXL, Aspirateur avec sac, 900W max, Modèle parquet\nRO3143EA\n--\nIndisponible\nPower XXL, Modèle home & car\nRO3154EA\n--\nIndisponible\nPower XXL, Modèle total clean\nRO3187EA\n--\nIndisponible\nPower XXL\nRO3142EA\n--\nIndisponible\nPower XXL\nRO3",
-              "retrieved_at": "2026-10-11T10:53:37.629381+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752502+00:00",
               "explicit_relation": true
             }
           ]
@@ -1840,7 +2040,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\n, Filtration 99%\nRO3126EA\n--\nIndisponible\nPower XXL, Aspirateur avec sac, 900W max, 4,5L, Filtration 99,98%, Kit animal\nRO3172EA\n--\nIndisponible\nPower XXL, Aspirateur avec sac, 900W max, Modèle parquet\nRO3143EA\n--\nIndisponible\nPower XXL, Modèle hom",
-              "retrieved_at": "2026-10-11T10:53:37.629444+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752572+00:00",
               "explicit_relation": true
             }
           ]
@@ -1865,7 +2065,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\nle parquet\nRO3143EA\n--\nIndisponible\nPower XXL, Modèle home & car\nRO3154EA\n--\nIndisponible\nPower XXL, Modèle total clean\nRO3187EA\n--\nIndisponible\nPower XXL\nRO3142EA\n--\nIndisponible\nPower XXL\nRO3123EA\n--\nIndisponible\nPower XXL\nYY4473FE\n--\nIndisponibl",
-              "retrieved_at": "2026-10-11T10:53:37.629462+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752593+00:00",
               "explicit_relation": true
             }
           ]
@@ -1890,7 +2090,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCOMPACT POWER  CYCLONIC\nRO3733EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3716EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC RO3740\nRO3745EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3761EA\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.650035+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558370+00:00",
               "explicit_relation": true
             }
           ]
@@ -1915,7 +2115,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\nT POWER CYCLONIC RO3740\nRO3745EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3761EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC\nRO3718EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:36.650060+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558408+00:00",
               "explicit_relation": true
             }
           ]
@@ -1940,7 +2140,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\n mon produit ?\nProduit\nRéférence\nCatégorie\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3721EA\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3726EA\n--\nIndisponible\nC",
-              "retrieved_at": "2026-10-11T10:53:36.650076+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558449+00:00",
               "explicit_relation": true
             }
           ]
@@ -1965,7 +2165,24 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\n Haute filtration\nRO3726EA\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3725EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCOMPACT POWER  CYCLONIC\nRO3733EA\n--\nIndisponible\nCompac",
-              "retrieved_at": "2026-10-11T10:53:36.650087+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558468+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\nPOWERLINE EXTREME\nRH8121WB\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3725EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3950EA\n--",
+              "retrieved_at": "2026-10-11T15:08:01.468523+00:00",
               "explicit_relation": true
             }
           ]
@@ -1990,7 +2207,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\n Haute filtration\nRO3721EA\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3726EA\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3725EA\n--\nIndisponible\nC",
-              "retrieved_at": "2026-10-11T10:53:36.650098+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558483+00:00",
               "explicit_relation": true
             }
           ]
@@ -2015,7 +2232,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\npact, Haute filtration\nRO3725EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCOMPACT POWER  CYCLONIC\nRO3733EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3716EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC RO3740\nRO3745EA\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.650110+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558498+00:00",
               "explicit_relation": true
             }
           ]
@@ -2040,7 +2257,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\nCOMPACT POWER  CYCLONIC\nRO3733EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3716EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC RO3740\nRO3745EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3761EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC\nRO3718EA\n--\nIndisponibl",
-              "retrieved_at": "2026-10-11T10:53:36.650139+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558513+00:00",
               "explicit_relation": true
             }
           ]
@@ -2065,7 +2282,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\n POWER  CYCLONIC\nRO3733EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3716EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC RO3740\nRO3745EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3761EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC\nRO3718EA\n--\nIndisponible\nVoir pl",
-              "retrieved_at": "2026-10-11T10:53:36.650168+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558528+00:00",
               "explicit_relation": true
             }
           ]
@@ -2090,7 +2307,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\nateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3955EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3945EA\n--\nIndisponible\nCo",
-              "retrieved_at": "2026-10-11T10:53:37.852395+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022657+00:00",
               "explicit_relation": true
             }
           ]
@@ -2107,7 +2324,24 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\nct Power Cyclonic, Aspirateur sans sac, 750W, Compact, Haute filtration\nRO3725EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCOMPACT POWER  CYCLONIC\nRO3733EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3716EA\n--\nIndisponible\nCOMPAC",
-              "retrieved_at": "2026-10-11T10:53:36.650181+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558543+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\nateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3950EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCom",
+              "retrieved_at": "2026-10-11T15:08:01.468547+00:00",
               "explicit_relation": true
             }
           ]
@@ -2132,7 +2366,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR005901 | Rowenta",
               "excerpt": "Ref: ZR005901\nt Power Cyclonic\nRO3716EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC RO3740\nRO3745EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3761EA\n--\nIndisponible\nCOMPACT POWER CYCLONIC\nRO3718EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:36.650194+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.558570+00:00",
               "explicit_relation": true
             }
           ]
@@ -2157,7 +2391,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\nute filtration, 3L\nRO3945EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3923EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3927EA\n--\nIndisponible\nCo",
-              "retrieved_at": "2026-10-11T10:53:37.852432+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022704+00:00",
               "explicit_relation": true
             }
           ]
@@ -2182,7 +2416,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\nute filtration, 3L\nRO3923EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3927EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3950EA\n--",
-              "retrieved_at": "2026-10-11T10:53:37.852458+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022735+00:00",
               "explicit_relation": true
             }
           ]
@@ -2207,7 +2441,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\nact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3945EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3923EA\n--\nIndisponible\nCo",
-              "retrieved_at": "2026-10-11T10:53:37.852478+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022760+00:00",
               "explicit_relation": true
             }
           ]
@@ -2232,7 +2466,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateurs hygiène+ ZR200520 | Rowenta",
               "excerpt": "Ref: ZR200520\nS+\nRR8595WH\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3950EA\n--\nIndisponible\nX-Plorer Serie 220+, Aspirateur robot, 5600 Pa\nRR9485WH\n--\nIndisponible\nX-PLORER Serie 135+, Aspirateur",
-              "retrieved_at": "2026-10-11T10:53:39.165612+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.678204+00:00",
               "explicit_relation": true
             }
           ]
@@ -2249,7 +2483,24 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\n3L\nRO3927EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3950EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3969EA\n--\nIndisponible\nCo",
-              "retrieved_at": "2026-10-11T10:53:37.852497+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022782+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\non\nRO3725EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3950EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sa",
+              "retrieved_at": "2026-10-11T15:08:01.468568+00:00",
               "explicit_relation": true
             }
           ]
@@ -2274,7 +2525,24 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\nar\nRO3967EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3955EA\n--\nIndisponible\nCompact Power Cyclonic\nRO3753EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, ",
-              "retrieved_at": "2026-10-11T10:53:37.852517+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022804+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\nXL\nRO4826EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3955EA\n--\nIndisponible\nVoir plus...\n",
+              "retrieved_at": "2026-10-11T15:08:01.468584+00:00",
               "explicit_relation": true
             }
           ]
@@ -2299,7 +2567,24 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\nduit\nRéférence\nCatégorie\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle home & car\nRO3967EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3955EA\n--",
-              "retrieved_at": "2026-10-11T10:53:37.852536+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022826+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\nO4825EAR\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle home & car\nRO3967EA\n--\nIndisponible\nCOMPACT POWER XXL\nRO4826EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute",
+              "retrieved_at": "2026-10-11T15:08:01.468600+00:00",
               "explicit_relation": true
             }
           ]
@@ -2324,7 +2609,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\n3L, Modèle parquet\nRO3950EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L\nRO3969EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle animal\nRO3985EA\n--\n",
-              "retrieved_at": "2026-10-11T10:53:37.852556+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022848+00:00",
               "explicit_relation": true
             }
           ]
@@ -2349,7 +2634,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-RT900736 | Rowenta",
               "excerpt": "Ref: RS-RT900736\n 3L\nRO3969EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle animal\nRO3985EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les conditions de garantie produits\nCentres de Réparation\nRetrouvez les",
-              "retrieved_at": "2026-10-11T10:53:37.852576+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.022870+00:00",
               "explicit_relation": true
             }
           ]
@@ -2374,7 +2659,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nNCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO",
-              "retrieved_at": "2026-10-11T10:53:38.803273+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178050+00:00",
               "explicit_relation": true
             }
           ]
@@ -2391,7 +2676,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nNCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO",
-              "retrieved_at": "2026-10-11T10:53:38.995032+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447182+00:00",
               "explicit_relation": true
             }
           ]
@@ -2416,7 +2701,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nnce Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO",
-              "retrieved_at": "2026-10-11T10:53:38.803299+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178087+00:00",
               "explicit_relation": true
             }
           ]
@@ -2433,7 +2718,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nnce Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO",
-              "retrieved_at": "2026-10-11T10:53:38.995057+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447218+00:00",
               "explicit_relation": true
             }
           ]
@@ -2458,7 +2743,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nmon produit ?\nProduit\nRéférence\nCatégorie\nSILENCE FORCE EXTREME CLASSIC+\nRO5913EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nS",
-              "retrieved_at": "2026-10-11T10:53:38.803313+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178107+00:00",
               "explicit_relation": true
             }
           ]
@@ -2475,7 +2760,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nmon produit ?\nProduit\nRéférence\nCatégorie\nSILENCE FORCE EXTREME CLASSIC+\nRO5913EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nS",
-              "retrieved_at": "2026-10-11T10:53:38.995072+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447238+00:00",
               "explicit_relation": true
             }
           ]
@@ -2500,7 +2785,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nCE FORCE EXTREME CLASSIC+\nRO5913EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nS",
-              "retrieved_at": "2026-10-11T10:53:38.803325+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178123+00:00",
               "explicit_relation": true
             }
           ]
@@ -2517,7 +2802,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nCE FORCE EXTREME CLASSIC+\nRO5913EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nS",
-              "retrieved_at": "2026-10-11T10:53:38.995084+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447253+00:00",
               "explicit_relation": true
             }
           ]
@@ -2542,7 +2827,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nEA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO5933EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:38.803336+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178138+00:00",
               "explicit_relation": true
             }
           ]
@@ -2559,7 +2844,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nEA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO5933EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:38.995095+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447268+00:00",
               "explicit_relation": true
             }
           ]
@@ -2584,7 +2869,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\n ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCOMPACT POWER XXL\nRO4823EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nYY5267FE\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateu",
-              "retrieved_at": "2026-10-11T10:53:37.086812+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071732+00:00",
               "explicit_relation": true
             }
           ]
@@ -2609,7 +2894,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\nt Power Cyclonic XXL\nYY5267FE\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:37.296108+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319213+00:00",
               "explicit_relation": true
             }
           ]
@@ -2626,7 +2911,74 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nt Power Cyclonic XXL\nYY5267FE\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur sans sac, 90",
-              "retrieved_at": "2026-10-11T10:53:37.086837+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071771+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\nmpact Power Cyclonic\nRO3753EA\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle home & car\nRO3967EA",
+              "retrieved_at": "2026-10-11T15:08:01.468624+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO4826EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\nirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle home & car\nRO3967EA\n--\nIndisponible\nCOMPACT POWER XXL\nRO4826EA\n--\nIndisponible\nCompact Power, Aspirateur avec sac, 900W max, compact, haute filtration, 3L, Modèle parquet\nRO3955EA\n--",
+              "retrieved_at": "2026-10-11T15:08:01.468640+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO4853EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR903501",
+          "consumable_name": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-separateur-ss-7223035240/csp/7223035240",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre de sortie d'air haute filtration ZR903501 | Rowenta",
+              "excerpt": "Ref: ZR903501\n ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCOMPACT POWER XXL\nRO4853EA\n--\nIndisponible\nPOWERLINE EXTREME\nRH8121WB\n--\nIndisponible\nCompact Power Cyclonic, Aspirateur sans sac, 750W, Compact, ",
+              "retrieved_at": "2026-10-11T15:08:01.468655+00:00",
               "explicit_relation": true
             }
           ]
@@ -2651,7 +3003,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sac aspirateur Hygiène+ Anti-odeur ZR200720 | Rowenta",
               "excerpt": "Ref: ZR200720\n laveur, Auto-nettoyage, 10 000 PA, Détection laser à 360°\nRR9547E0\n--\nIndisponible\nG-Force, Aspirateur Avec Sac, 900 W\nRO4934EA\n--\nIndisponible\nX-PLORER Serie 240 AI+, Aspirateur robot, Modèle Animal & Allergy, 8000 Pa\nRR9695WH\n--\nIndisponible\nX-P",
-              "retrieved_at": "2026-10-11T10:53:39.360670+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.940826+00:00",
               "explicit_relation": true
             }
           ]
@@ -2676,7 +3028,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur sans sac, 900W, 2,5L\nRO4B11EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:37.086851+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071806+00:00",
               "explicit_relation": true
             }
           ]
@@ -2701,7 +3053,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\nac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B30EA",
-              "retrieved_at": "2026-10-11T10:53:37.296203+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319311+00:00",
               "explicit_relation": true
             }
           ]
@@ -2718,7 +3070,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nponible\nCompact Power Cyclonic XXL, Aspirateur sans sac, 900W, 2,5L\nRO4B11EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B25EA\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:37.086863+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071823+00:00",
               "explicit_relation": true
             }
           ]
@@ -2743,7 +3095,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\n, 900W, 2,5L\nRO4B50EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur traineau sans sac, puissant 900W, 75 db(A)\nRO4B20EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B31EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les",
-              "retrieved_at": "2026-10-11T10:53:37.296224+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319336+00:00",
               "explicit_relation": true
             }
           ]
@@ -2768,7 +3120,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\nTIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:37.296242+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319358+00:00",
               "explicit_relation": true
             }
           ]
@@ -2785,7 +3137,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nsac, 900W, 2,5L\nRO4B11EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B25EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B36EA",
-              "retrieved_at": "2026-10-11T10:53:37.086875+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071840+00:00",
               "explicit_relation": true
             }
           ]
@@ -2810,7 +3162,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\ner Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B30EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirat",
-              "retrieved_at": "2026-10-11T10:53:37.296259+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319380+00:00",
               "explicit_relation": true
             }
           ]
@@ -2827,7 +3179,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nTIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur sans sac, 900W, 2,5L\nRO4B11EA\n--\nIndisponible\nCompact Power Cycl",
-              "retrieved_at": "2026-10-11T10:53:37.086885+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071855+00:00",
               "explicit_relation": true
             }
           ]
@@ -2852,7 +3204,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\ner Cyclonic XXL\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B25EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B36EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:37.086896+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071870+00:00",
               "explicit_relation": true
             }
           ]
@@ -2877,7 +3229,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\nRO4B13EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B23EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B30EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur sans sac, 900W, 2,5L\nRO4B50EA\n--\nIndisponible\nCompact Power Cycl",
-              "retrieved_at": "2026-10-11T10:53:37.296278+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319402+00:00",
               "explicit_relation": true
             }
           ]
@@ -2902,7 +3254,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\npirateur traineau sans sac, puissant 900W, 75 db(A)\nRO4B20EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B31EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les conditions de garantie produits\nCentres de Réparation\nRetrouvez les",
-              "retrieved_at": "2026-10-11T10:53:37.296296+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319443+00:00",
               "explicit_relation": true
             }
           ]
@@ -2927,7 +3279,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nRO4B21EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nRO4B25EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Modèle Parquet\nRO4B36EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:37.086908+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071887+00:00",
               "explicit_relation": true
             }
           ]
@@ -2952,7 +3304,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\nPower Cyclonic XXL, Modèle Parquet\nRO4B30EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur sans sac, 900W, 2,5L\nRO4B50EA\n--\nIndisponible\nCompact Power Cyclonic XXL, Aspirateur traineau sans sac, puissant 900W, 75 db(A)\nRO4B20EA\n--\nIndisponi",
-              "retrieved_at": "2026-10-11T10:53:37.296314+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319469+00:00",
               "explicit_relation": true
             }
           ]
@@ -2977,7 +3329,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\ndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO5933EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:38.803355+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178165+00:00",
               "explicit_relation": true
             }
           ]
@@ -2994,7 +3346,224 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\ndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO5933EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:38.995114+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447296+00:00",
+              "explicit_relation": true
+            }
+          ]
+        },
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nous ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nX-TREM POWER 2\nRO5443EA\n--\nIndisponible\nX-TREM POWER 2\nRO5473EA\n--\nIndisponible\nX-TREM POWER\nRO5433EA\n-",
+              "retrieved_at": "2026-10-11T15:08:01.196633+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5423EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nWER\nRO5441EA\n--\nIndisponible\nX-TREM POWER\nRO5461EA\n--\nIndisponible\nX-TREM POWER 2\nRO5475EA\n--\nIndisponible\nX-TREM POWER\nRO5423EA\n--\nIndisponible\nX-Trem Power 2200W Parquet\nRO547311\n--\nIndisponible\nVoir plus...\n",
+              "retrieved_at": "2026-10-11T15:08:01.196670+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5433EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\n2\nRO5421EA\n--\nIndisponible\nX-TREM POWER 2\nRO5443EA\n--\nIndisponible\nX-TREM POWER 2\nRO5473EA\n--\nIndisponible\nX-TREM POWER\nRO5433EA\n--\nIndisponible\nX-TREM POWER\nRO5441EA\n--\nIndisponible\nX-TREM POWER\nRO5461EA\n--\nIndisponible\nX-TREM POWER 2\nRO5475EA\n--\n",
+              "retrieved_at": "2026-10-11T15:08:01.196688+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5441EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nR 2\nRO5443EA\n--\nIndisponible\nX-TREM POWER 2\nRO5473EA\n--\nIndisponible\nX-TREM POWER\nRO5433EA\n--\nIndisponible\nX-TREM POWER\nRO5441EA\n--\nIndisponible\nX-TREM POWER\nRO5461EA\n--\nIndisponible\nX-TREM POWER 2\nRO5475EA\n--\nIndisponible\nX-TREM POWER\nRO5423EA\n--\n",
+              "retrieved_at": "2026-10-11T15:08:01.196702+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5443EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nrouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nX-TREM POWER 2\nRO5443EA\n--\nIndisponible\nX-TREM POWER 2\nRO5473EA\n--\nIndisponible\nX-TREM POWER\nRO5433EA\n--\nIndisponible\nX-TREM POWER\nRO5441EA\n--\n",
+              "retrieved_at": "2026-10-11T15:08:01.196717+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5461EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nWER 2\nRO5473EA\n--\nIndisponible\nX-TREM POWER\nRO5433EA\n--\nIndisponible\nX-TREM POWER\nRO5441EA\n--\nIndisponible\nX-TREM POWER\nRO5461EA\n--\nIndisponible\nX-TREM POWER 2\nRO5475EA\n--\nIndisponible\nX-TREM POWER\nRO5423EA\n--\nIndisponible\nX-Trem Power 2200W Parque",
+              "retrieved_at": "2026-10-11T15:08:01.196731+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO547311",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\n-\nIndisponible\nX-TREM POWER 2\nRO5475EA\n--\nIndisponible\nX-TREM POWER\nRO5423EA\n--\nIndisponible\nX-Trem Power 2200W Parquet\nRO547311\n--\nIndisponible\nVoir plus...\n",
+              "retrieved_at": "2026-10-11T15:08:01.196745+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5473EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nduit\nRéférence\nCatégorie\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nX-TREM POWER 2\nRO5443EA\n--\nIndisponible\nX-TREM POWER 2\nRO5473EA\n--\nIndisponible\nX-TREM POWER\nRO5433EA\n--\nIndisponible\nX-TREM POWER\nRO5441EA\n--\nIndisponible\nX-TREM POWER\nRO5461EA\n--\nIn",
+              "retrieved_at": "2026-10-11T15:08:01.196759+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO5475EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR004801",
+          "consumable_name": "Filtre haute performance ZR004801 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr004801/a/2210015969",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR004801 | Rowenta",
+              "excerpt": "Ref: ZR004801\nWER\nRO5433EA\n--\nIndisponible\nX-TREM POWER\nRO5441EA\n--\nIndisponible\nX-TREM POWER\nRO5461EA\n--\nIndisponible\nX-TREM POWER 2\nRO5475EA\n--\nIndisponible\nX-TREM POWER\nRO5423EA\n--\nIndisponible\nX-Trem Power 2200W Parquet\nRO547311\n--\nIndisponible\nVoir plus...\n",
+              "retrieved_at": "2026-10-11T15:08:01.196773+00:00",
               "explicit_relation": true
             }
           ]
@@ -3019,7 +3588,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nNCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM PO",
-              "retrieved_at": "2026-10-11T10:53:38.803366+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178186+00:00",
               "explicit_relation": true
             }
           ]
@@ -3036,7 +3605,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nNCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence Force Extreme Compact\nRO562911\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4633EA\n--\nIndisponible\nSILENCE FORCE COMPACT\nRO4649EA\n--\nIndisponible\nX-TREM PO",
-              "retrieved_at": "2026-10-11T10:53:38.995138+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447318+00:00",
               "explicit_relation": true
             }
           ]
@@ -3061,7 +3630,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nrez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSILENCE FORCE EXTREME CLASSIC+\nRO5913EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence F",
-              "retrieved_at": "2026-10-11T10:53:38.803377+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178200+00:00",
               "explicit_relation": true
             }
           ]
@@ -3078,7 +3647,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nrez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSILENCE FORCE EXTREME CLASSIC+\nRO5913EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4721EA\n--\nIndisponible\nSILENCE FORCE UPGRADE\nRO4723EA\n--\nIndisponible\nSilence F",
-              "retrieved_at": "2026-10-11T10:53:38.995150+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447332+00:00",
               "explicit_relation": true
             }
           ]
@@ -3103,7 +3672,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Lot de 3 sacs aspirateurs Wonderbag WB403120 | Rowenta",
               "excerpt": "Ref: WB403120\nEA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO5933EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:38.803387+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.178215+00:00",
               "explicit_relation": true
             }
           ]
@@ -3120,7 +3689,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Sacs aspirateur universels (x5)  Wonderbag WB406120 | Rowenta",
               "excerpt": "Ref: WB406120\nEA\n--\nIndisponible\nX-TREM POWER 2\nRO5421EA\n--\nIndisponible\nSILENCE FORCE\nRO4745EA\n--\nIndisponible\nSILENCE FORCE EXTREME\nRO5933EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:38.995161+00:00",
+              "retrieved_at": "2026-10-11T15:07:59.447346+00:00",
               "explicit_relation": true
             }
           ]
@@ -3145,7 +3714,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR902601 | Rowenta",
               "excerpt": "Ref: ZR902601\nrie\nERGO FORCE CYCLONIC\nRO6799EA\n--\nIndisponible\nErgo Force Cyclonic noir/violet\nRO6799EA\n--\nIndisponible\nERGO CYCLONIC\nRO6702EA\n--\nIndisponible\nERGO FORCE CYCLONIC PARQUET\nRO6743EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6712EA\n--\nIndisponible\nERGO ",
-              "retrieved_at": "2026-10-11T10:53:36.469490+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.324236+00:00",
               "explicit_relation": true
             }
           ]
@@ -3170,7 +3739,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR902601 | Rowenta",
               "excerpt": "Ref: ZR902601\nponible\nERGO CYCLONIC\nRO6702EA\n--\nIndisponible\nERGO FORCE CYCLONIC PARQUET\nRO6743EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6712EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6723PA\n--\nIndisponible\nErgo Force Cyclonic noir/rose fuschia\nRO6723PA\n--\nIndispon",
-              "retrieved_at": "2026-10-11T10:53:36.469514+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.324272+00:00",
               "explicit_relation": true
             }
           ]
@@ -3195,7 +3764,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR902601 | Rowenta",
               "excerpt": "Ref: ZR902601\ne\nERGO FORCE CYCLONIC PARQUET\nRO6743EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6712EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6723PA\n--\nIndisponible\nErgo Force Cyclonic noir/rose fuschia\nRO6723PA\n--\nIndisponible\nErgo Force Cyclonic noir/rose fuschia\nRO",
-              "retrieved_at": "2026-10-11T10:53:36.469526+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.324295+00:00",
               "explicit_relation": true
             }
           ]
@@ -3220,7 +3789,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR902601 | Rowenta",
               "excerpt": "Ref: ZR902601\nPA\n--\nIndisponible\nErgo Force Cyclonic noir/rose fuschia\nRO6723PA\n--\nIndisponible\nErgo Force Cyclonic noir/rose fuschia\nRO6723PB\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:36.469542+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.324318+00:00",
               "explicit_relation": true
             }
           ]
@@ -3245,7 +3814,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR902601 | Rowenta",
               "excerpt": "Ref: ZR902601\n Force Cyclonic noir/violet\nRO6799EA\n--\nIndisponible\nERGO CYCLONIC\nRO6702EA\n--\nIndisponible\nERGO FORCE CYCLONIC PARQUET\nRO6743EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6712EA\n--\nIndisponible\nERGO FORCE CYCLONIC\nRO6723PA\n--\nIndisponible\nErgo Force Cy",
-              "retrieved_at": "2026-10-11T10:53:36.469552+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.324333+00:00",
               "explicit_relation": true
             }
           ]
@@ -3270,7 +3839,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Système de filtration ZR902601 | Rowenta",
               "excerpt": "Ref: ZR902601\nu vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nERGO FORCE CYCLONIC\nRO6799EA\n--\nIndisponible\nErgo Force Cyclonic noir/violet\nRO6799EA\n--\nIndisponible\nERGO CYCLONIC\nRO6702EA\n--\nIndisponible\nERGO FO",
-              "retrieved_at": "2026-10-11T10:53:36.469564+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.324349+00:00",
               "explicit_relation": true
             }
           ]
@@ -3295,7 +3864,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\nteur Sans Sac, 900 W Max\nRO7B13EA\n--\nIndisponible\nSILENCE FORCE CYCLONIC\nRO7213EA\n--\nIndisponible\nX-TREM POWER CYCLONIC\nRO6920EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les conditions de garantie produits\nCentres de Réparation\nRetrouvez les",
-              "retrieved_at": "2026-10-11T10:53:38.034132+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246065+00:00",
               "explicit_relation": true
             }
           ]
@@ -3320,7 +3889,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\n7C19EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B13EA\n--\nIndisponible\nSILENCE FORCE CYCLONIC\nRO7213EA\n--\nIndisponible\nX-TREM POWER CYCLONIC\nRO6920EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les conditions de garant",
-              "retrieved_at": "2026-10-11T10:53:38.034170+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246110+00:00",
               "explicit_relation": true
             }
           ]
@@ -3345,7 +3914,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\nous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSILENCE FORCE CYCLONIC\nRO7640EA\n--\nIndisponible\nSilence Force Cyclonic, Aspirateur sans sac, Modèle parquet + 1 an de garantie supplémentaire\nYY5467FE\n",
-              "retrieved_at": "2026-10-11T10:53:35.086857+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.628953+00:00",
               "explicit_relation": true
             }
           ]
@@ -3370,7 +3939,182 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\nCYCLONIC \"CAR PRO\"\nYY4560FE\n--\nIndisponible\nSilence Force Cyclonic, Aspirateur sans sac, Modèle parquet - RECONDITIONNÉ\nRO7649EAR\n--\nIndisponible\nSilence Force Cyclonic Effitech, Modèle Total Clean\nRO7961EA\n--\nIndisponible\nSilence Force Cyclonic Eff",
-              "retrieved_at": "2026-10-11T10:53:35.086884+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.628993+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7830",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\n\nCOMPACT FORCE CYCLONIC\nRO7853EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO783411\n--\nIndisponible\nCOMPACT FORCE CYCLONIC RO7830\nRO783711\n--\nIndisponible\nCompact Force Cyclonic noir/rouge\nRO785311\n--\nIndisponible\nCompact Force Cyclonic noir/bleu\nRO",
+              "retrieved_at": "2026-10-11T15:08:00.974657+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO783411",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\nnce de mon produit ?\nProduit\nRéférence\nCatégorie\nCOMPACT FORCE CYCLONIC\nRO7853EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO783411\n--\nIndisponible\nCOMPACT FORCE CYCLONIC RO7830\nRO783711\n--\nIndisponible\nCompact Force Cyclonic noir/rouge\nRO785311\n--\nIn",
+              "retrieved_at": "2026-10-11T15:08:00.974694+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO783711",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\nT FORCE CYCLONIC\nRO7853EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO783411\n--\nIndisponible\nCOMPACT FORCE CYCLONIC RO7830\nRO783711\n--\nIndisponible\nCompact Force Cyclonic noir/rouge\nRO785311\n--\nIndisponible\nCompact Force Cyclonic noir/bleu\nRO7845EA\n--",
+              "retrieved_at": "2026-10-11T15:08:00.974713+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7845EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\n30\nRO783711\n--\nIndisponible\nCompact Force Cyclonic noir/rouge\nRO785311\n--\nIndisponible\nCompact Force Cyclonic noir/bleu\nRO7845EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO7853EA\n--\nIndisponible\nCompact Force Cyclonic\nRO7854EA\n--\nIndisponible\nCOMPACT",
+              "retrieved_at": "2026-10-11T15:08:00.974740+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO785311",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\nLONIC\nRO783411\n--\nIndisponible\nCOMPACT FORCE CYCLONIC RO7830\nRO783711\n--\nIndisponible\nCompact Force Cyclonic noir/rouge\nRO785311\n--\nIndisponible\nCompact Force Cyclonic noir/bleu\nRO7845EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO7853EA\n--\nIndisponib",
+              "retrieved_at": "2026-10-11T15:08:00.974755+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7853EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\nous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCOMPACT FORCE CYCLONIC\nRO7853EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO783411\n--\nIndisponible\nCOMPACT FORCE CYCLONIC RO7830\nRO783711\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.974771+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RO7854EA",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR902001",
+          "consumable_name": "Filtre haute performance ZR902001 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-performance-zr902001/a/1600005404",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute performance ZR902001 | Rowenta",
+              "excerpt": "Ref: ZR902001\norce Cyclonic noir/bleu\nRO7845EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC\nRO7853EA\n--\nIndisponible\nCompact Force Cyclonic\nRO7854EA\n--\nIndisponible\nCOMPACT FORCE CYCLONIC PARQUET\nRO783411\n--\nIndisponible\nCompact Force Cyclonic blanc/bleu\nRO783711\n--\nI",
+              "retrieved_at": "2026-10-11T15:08:00.974785+00:00",
               "explicit_relation": true
             }
           ]
@@ -3395,7 +4139,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\nce Force Cyclonic Effitech, Modèle Total Clean\nRO7961EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Modèle Car Pro\nRO7933EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Aspirateur sans sac, Modèle Home & Car\nRO7954EA\n--\nIndisponible\nSilenc",
-              "retrieved_at": "2026-10-11T10:53:35.086900+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629020+00:00",
               "explicit_relation": true
             }
           ]
@@ -3420,7 +4164,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\ndèle Home & Car\nRO7954EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Aspirateur sans sac, 59 db(A), Puissant, 2,5L\nRO7935EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Modèle Parquet\nRO7936EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.086915+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629043+00:00",
               "explicit_relation": true
             }
           ]
@@ -3445,7 +4189,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\n Aspirateur sans sac, 59 db(A), Puissant, 2,5L\nRO7935EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Modèle Parquet\nRO7936EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:35.086928+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629061+00:00",
               "explicit_relation": true
             }
           ]
@@ -3470,7 +4214,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\nfitech, Modèle Car Pro\nRO7933EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Aspirateur sans sac, Modèle Home & Car\nRO7954EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Aspirateur sans sac, 59 db(A), Puissant, 2,5L\nRO7935EA\n--\nIndisponible",
-              "retrieved_at": "2026-10-11T10:53:35.086943+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629079+00:00",
               "explicit_relation": true
             }
           ]
@@ -3495,7 +4239,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\n sans sac, Modèle parquet - RECONDITIONNÉ\nRO7649EAR\n--\nIndisponible\nSilence Force Cyclonic Effitech, Modèle Total Clean\nRO7961EA\n--\nIndisponible\nSilence Force Cyclonic Effitech, Modèle Car Pro\nRO7933EA\n--\nIndisponible\nSilence Force Cyclonic Effitec",
-              "retrieved_at": "2026-10-11T10:53:35.086956+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629095+00:00",
               "explicit_relation": true
             }
           ]
@@ -3520,7 +4264,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\norce Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B32EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B11EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C19EA\n--\nIndisponible\nG-Force Cyclonic, As",
-              "retrieved_at": "2026-10-11T10:53:38.034194+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246147+00:00",
               "explicit_relation": true
             }
           ]
@@ -3537,7 +4281,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\npirateur avec sac, Puissant, Ultra Silencieux\nRO7C71EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B11EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:36.860950+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847150+00:00",
               "explicit_relation": true
             }
           ]
@@ -3562,7 +4306,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\nonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C19EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B13EA\n--\nIndisponible\nSILENCE FORCE CYCLONIC\nRO7213EA\n--\nIndisponible\nX-TREM POWER CYCLONIC\nRO6920EA\n--\nIndisponible\nVoir plu",
-              "retrieved_at": "2026-10-11T10:53:38.034213+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246170+00:00",
               "explicit_relation": true
             }
           ]
@@ -3587,7 +4331,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\nspirateur sans sac, Puissant, Très silencieux\nRO7C44E0\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B32EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B11EA\n--\nIndisponible\nG-Force Cyclonic Silence, Asp",
-              "retrieved_at": "2026-10-11T10:53:38.034231+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246192+00:00",
               "explicit_relation": true
             }
           ]
@@ -3612,7 +4356,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\nonic, Aspirateur Sans Sac, 900 W Max\nRO7B11EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C19EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B13EA\n--\nIndisponible\nSILENCE FORCE CYCLONIC\nRO7213",
-              "retrieved_at": "2026-10-11T10:53:38.034249+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246213+00:00",
               "explicit_relation": true
             }
           ]
@@ -3637,7 +4381,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\nnce, Aspirateur Sans Sac, Silencieux\nRO7C32EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C30EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C36EA\n--\nIndisponible\nG-Force Cyclonic Sil",
-              "retrieved_at": "2026-10-11T10:53:36.860984+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847191+00:00",
               "explicit_relation": true
             }
           ]
@@ -3662,7 +4406,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\nver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C32EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C30EA\n--\nIndisponible\nG-Force Cyclonic Sil",
-              "retrieved_at": "2026-10-11T10:53:36.861000+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847213+00:00",
               "explicit_relation": true
             }
           ]
@@ -3687,7 +4431,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\nnce, Aspirateur Sans Sac, Silencieux\nRO7C30EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C36EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C66EA\n--\nIndisponible\nSilence Force Cyclon",
-              "retrieved_at": "2026-10-11T10:53:36.861013+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847231+00:00",
               "explicit_relation": true
             }
           ]
@@ -3712,7 +4456,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\nsant, Très silencieux\nRO7C89E0\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C44E0\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B32EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur ",
-              "retrieved_at": "2026-10-11T10:53:38.034270+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246236+00:00",
               "explicit_relation": true
             }
           ]
@@ -3729,7 +4473,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\n Sans Sac, Silencieux\nRO7C66EA\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C44E0\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C89E0\n--\nIndisponible\nG-For",
-              "retrieved_at": "2026-10-11T10:53:36.861027+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847249+00:00",
               "explicit_relation": true
             }
           ]
@@ -3754,7 +4498,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\nver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C56EA\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C89E0\n--\nIndisponible\nSilen",
-              "retrieved_at": "2026-10-11T10:53:38.034289+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246258+00:00",
               "explicit_relation": true
             }
           ]
@@ -3779,7 +4523,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\nnce, Aspirateur Sans Sac, Silencieux\nRO7C36EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C66EA\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C44E0\n--\nIndisponible\nSilen",
-              "retrieved_at": "2026-10-11T10:53:36.861041+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847267+00:00",
               "explicit_relation": true
             }
           ]
@@ -3804,7 +4548,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\nSans Sac, Silencieux\nRO7C89EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur avec sac, Puissant, Ultra Silencieux\nRO7C71EA\n--\nIndisponible\nG-Force Cyclonic, Aspirateur Sans Sac, 900 W Max\nRO7B11EA\n--\nIndisponible\nVoir plus...\n",
-              "retrieved_at": "2026-10-11T10:53:36.861054+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847283+00:00",
               "explicit_relation": true
             }
           ]
@@ -3829,7 +4573,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre aspirateur RS-2230000345 | Rowenta",
               "excerpt": "Ref: RS-2230000345\n Sans Sac, Silencieux\nRO7C56EA\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C89E0\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C44E0\n--\nIndisponible\nG-For",
-              "retrieved_at": "2026-10-11T10:53:38.034308+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.246281+00:00",
               "explicit_relation": true
             }
           ]
@@ -3846,7 +4590,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\nsant, Très silencieux\nRO7C44E0\n--\nIndisponible\nSilence Force Cyclonic 8, Aspirateur sans sac, Puissant, Très silencieux\nRO7C89E0\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C89EA\n--\nIndisponible\nG-Force Cyclonic Sil",
-              "retrieved_at": "2026-10-11T10:53:36.861067+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847299+00:00",
               "explicit_relation": true
             }
           ]
@@ -3871,7 +4615,107 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR006001 | Rowenta",
               "excerpt": "Ref: ZR006001\n sans sac, Puissant, Très silencieux\nRO7C89E0\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur Sans Sac, Silencieux\nRO7C89EA\n--\nIndisponible\nG-Force Cyclonic Silence, Aspirateur avec sac, Puissant, Ultra Silencieux\nRO7C71EA\n--\nIndisponible\nG-Fo",
-              "retrieved_at": "2026-10-11T10:53:36.861080+00:00",
+              "retrieved_at": "2026-10-11T15:07:56.847316+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RR7126WH",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR710101",
+          "consumable_name": "Filtres et brossettes ZR710101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtres-et-brossettes-zr710101/a/2211400322",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtres et brossettes ZR710101 | Rowenta",
+              "excerpt": "Ref: ZR710101\nu vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nSMART FORCE EXTREME\nRR7126WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7157WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7133WH\n--\nIndisponible\nSMART FORCE E",
+              "retrieved_at": "2026-10-11T15:08:00.749882+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RR7133WH",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR710101",
+          "consumable_name": "Filtres et brossettes ZR710101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtres-et-brossettes-zr710101/a/2211400322",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtres et brossettes ZR710101 | Rowenta",
+              "excerpt": "Ref: ZR710101\nCatégorie\nSMART FORCE EXTREME\nRR7126WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7157WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7133WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7145WH\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.749918+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RR7145WH",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR710101",
+          "consumable_name": "Filtres et brossettes ZR710101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtres-et-brossettes-zr710101/a/2211400322",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtres et brossettes ZR710101 | Rowenta",
+              "excerpt": "Ref: ZR710101\nisponible\nSMART FORCE EXTREME\nRR7157WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7133WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7145WH\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.749936+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RR7157WH",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR710101",
+          "consumable_name": "Filtres et brossettes ZR710101 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtres-et-brossettes-zr710101/a/2211400322",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtres et brossettes ZR710101 | Rowenta",
+              "excerpt": "Ref: ZR710101\nréférence de mon produit ?\nProduit\nRéférence\nCatégorie\nSMART FORCE EXTREME\nRR7126WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7157WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7133WH\n--\nIndisponible\nSMART FORCE EXTREME\nRR7145WH\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.749951+00:00",
               "explicit_relation": true
             }
           ]
@@ -3896,7 +4740,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtres x2 et brossettes x2 ZR177002 | Rowenta",
               "excerpt": "Ref: ZR177002\nible\nX-Plorer Série 120AI, Aspirateur robot, Navigation intelligente, 120min\nRR7877WH\n--\nIndisponible\nX-PLORER SERIE 80\nRR7747WH\n--\nIndisponible\nX-PLORER SERIE 120 AI\nRR7875WH\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.458144+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.734441+00:00",
               "explicit_relation": true
             }
           ]
@@ -3921,7 +4765,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtres x2 et brossettes x2 ZR177002 | Rowenta",
               "excerpt": "Ref: ZR177002\nférez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nX-PLORER SERIE 80 KIT ANIMAL\nRR7755WH\n--\nIndisponible\nX-Plorer Série 120AI, Aspirateur robot, Navigation intelligente, 120min\nRR7865WH\n--\nIndisponible\nX-Plor",
-              "retrieved_at": "2026-10-11T10:53:38.458176+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.734481+00:00",
               "explicit_relation": true
             }
           ]
@@ -3946,7 +4790,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtres x2 et brossettes x2 ZR177002 | Rowenta",
               "excerpt": "Ref: ZR177002\nER SERIE 80 KIT ANIMAL\nRR7755WH\n--\nIndisponible\nX-Plorer Série 120AI, Aspirateur robot, Navigation intelligente, 120min\nRR7865WH\n--\nIndisponible\nX-Plorer Série 120AI, Aspirateur robot, Navigation intelligente, 120min\nRR7877WH\n--\nIndisponible\nX-PLOR",
-              "retrieved_at": "2026-10-11T10:53:38.458189+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.734499+00:00",
               "explicit_relation": true
             }
           ]
@@ -3971,7 +4815,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtres x2 et brossettes x2 ZR177002 | Rowenta",
               "excerpt": "Ref: ZR177002\nvigation intelligente, 120min\nRR7877WH\n--\nIndisponible\nX-PLORER SERIE 80\nRR7747WH\n--\nIndisponible\nX-PLORER SERIE 120 AI\nRR7875WH\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.458201+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.734514+00:00",
               "explicit_relation": true
             }
           ]
@@ -3996,7 +4840,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtres x2 et brossettes x2 ZR177002 | Rowenta",
               "excerpt": "Ref: ZR177002\nn intelligente, 120min\nRR7865WH\n--\nIndisponible\nX-Plorer Série 120AI, Aspirateur robot, Navigation intelligente, 120min\nRR7877WH\n--\nIndisponible\nX-PLORER SERIE 80\nRR7747WH\n--\nIndisponible\nX-PLORER SERIE 120 AI\nRR7875WH\n--\nIndisponible\n",
-              "retrieved_at": "2026-10-11T10:53:38.458212+00:00",
+              "retrieved_at": "2026-10-11T15:07:58.734529+00:00",
               "explicit_relation": true
             }
           ]
@@ -4033,21 +4877,114 @@
     },
     {
       "brand": "Rowenta",
+      "model": "RR87C5FE",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR879B01",
+          "consumable_name": "Filtre haute efficacité ZR879B01  | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-efficacite-zr879b01/a/2211401384",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute efficacité ZR879B01  | Rowenta",
+              "excerpt": "Ref: ZR879B01\ntion laser à 360°\nRR87C5WH\n--\nIndisponible\nX-PLORER Serie 85, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87C5FE\n--\nIndisponible\nRowenta X-PLORER Serie 85+, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87D5WH\n--\nIndis",
+              "retrieved_at": "2026-10-11T15:08:00.438333+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RR87C5WH",
+      "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR879B01",
+          "consumable_name": "Filtre haute efficacité ZR879B01  | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-efficacite-zr879b01/a/2211401384",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute efficacité ZR879B01  | Rowenta",
+              "excerpt": "Ref: ZR879B01\n mon produit ?\nProduit\nRéférence\nCatégorie\nX-PLORER Serie 85, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87C5WH\n--\nIndisponible\nX-PLORER Serie 85, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87C5FE\n--\nIndisponible\nR",
+              "retrieved_at": "2026-10-11T15:08:00.438369+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
       "model": "RR87D5FE",
       "type": "Aspirateur",
-      "verified": false,
-      "parts": []
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR879B01",
+          "consumable_name": "Filtre haute efficacité ZR879B01  | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-efficacite-zr879b01/a/2211401384",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute efficacité ZR879B01  | Rowenta",
+              "excerpt": "Ref: ZR879B01\nr à 360°\nRR87D5WH\n--\nIndisponible\nRowenta X-PLORER Serie 85+, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87D5FE\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:00.438387+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
     },
     {
       "brand": "Rowenta",
       "model": "RR87D5WH",
       "type": "Aspirateur",
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR879B01",
+          "consumable_name": "Filtre haute efficacité ZR879B01  | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-efficacite-zr879b01/a/2211401384",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute efficacité ZR879B01  | Rowenta",
+              "excerpt": "Ref: ZR879B01\nr à 360°\nRR87C5FE\n--\nIndisponible\nRowenta X-PLORER Serie 85+, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87D5WH\n--\nIndisponible\nRowenta X-PLORER Serie 85+, Aspirateur robot laveur, 6 000 Pa, Détection laser à 360°\nRR87D5FE\n--\nIndis",
+              "retrieved_at": "2026-10-11T15:08:00.438403+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "brand": "Rowenta",
+      "model": "RR89U7E0",
+      "type": "Aspirateur",
       "verified": false,
       "parts": []
     },
     {
       "brand": "Rowenta",
-      "model": "RR89U7E0",
+      "model": "RR8L85WH",
       "type": "Aspirateur",
       "verified": false,
       "parts": []
@@ -4077,8 +5014,26 @@
       "brand": "Rowenta",
       "model": "RR9547E0",
       "type": "Aspirateur",
-      "verified": false,
-      "parts": []
+      "verified": true,
+      "parts": [
+        {
+          "manufacturer_part_number": "ZR954B01",
+          "consumable_name": "Filtre haute efficacité ZR954B01 | Rowenta",
+          "consumable_type": "filter",
+          "status": "verified",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "source_url": "https://www.rowenta.fr/boutique-accessoires/filtre-haute-efficacite-zr954b01/a/2211401469",
+              "source_kind": "manufacturer_product_page",
+              "source_title": "Filtre haute efficacité ZR954B01 | Rowenta",
+              "excerpt": "Ref: ZR954B01\n\nRéférence\nCatégorie\nX-Plorer Serie 580 Max, Robot aspirateur laveur, Auto-nettoyage, 10 000 PA, Détection laser à 360°\nRR9547E0\n--\nIndisponible\n",
+              "retrieved_at": "2026-10-11T15:08:01.727019+00:00",
+              "explicit_relation": true
+            }
+          ]
+        }
+      ]
     },
     {
       "brand": "Rowenta",
@@ -4105,7 +5060,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre mousse RS-2230002150 | Rowenta",
               "excerpt": "Ref: RS-2230002150\nle total clean\nRO3187EA\n--\nIndisponible\nPower XXL\nRO3142EA\n--\nIndisponible\nPower XXL\nRO3123EA\n--\nIndisponible\nPower XXL\nYY4473FE\n--\nIndisponible\nPower XXL\nRO3113EA\n--\nIndisponible\nVoir plus...\nGarantie\nRetrouvez les conditions de garantie produits\n",
-              "retrieved_at": "2026-10-11T10:53:37.629524+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.752701+00:00",
               "explicit_relation": true
             }
           ]
@@ -4130,7 +5085,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\nur sans sac, Modèle parquet + 1 an de garantie supplémentaire\nYY5467FE\n--\nIndisponible\nSILENCE FORCE CYCLONIC \"CAR PRO\"\nYY4560FE\n--\nIndisponible\nSilence Force Cyclonic, Aspirateur sans sac, Modèle parquet - RECONDITIONNÉ\nRO7649EAR\n--\nIndisponible\nS",
-              "retrieved_at": "2026-10-11T10:53:35.086986+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629149+00:00",
               "explicit_relation": true
             }
           ]
@@ -4155,7 +5110,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre FS-9100037984 | Rowenta",
               "excerpt": "Ref: FS-9100037984\ndessous ou vous référez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCity Space\nYY5019FE\n--\nIndisponible\nCity Space\nRO2645EA\n--\nIndisponible\nCity Space\nRO2614EA\n--\nIndisponible\nCity Space\nRO2611EA\n--\nIndispon",
-              "retrieved_at": "2026-10-11T10:53:37.463300+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.536199+00:00",
               "explicit_relation": true
             }
           ]
@@ -4180,7 +5135,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Filtre séparateur SS-7222060695 | Rowenta",
               "excerpt": "Ref: SS-7222060695\nréférez au tableau\nComment trouver la référence de mon produit ?\nProduit\nRéférence\nCatégorie\nCompact Power Cyclonic XXL\nYY5267FE\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCom",
-              "retrieved_at": "2026-10-11T10:53:37.296361+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.319551+00:00",
               "explicit_relation": true
             }
           ]
@@ -4197,7 +5152,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR780000 | Rowenta",
               "excerpt": "Ref: ZR780000\nence de mon produit ?\nProduit\nRéférence\nCatégorie\nCOMPACT POWER XXL\nRO4823EA\n--\nIndisponible\nCompact Power Cyclonic XXL\nYY5267FE\n--\nIndisponible\nRECONDITIONNÉ Compact Power Cyclonic XXL, Aspirateur sans sac, 550W, 2,5L\nRO4825EAR\n--\nIndisponible\nCom",
-              "retrieved_at": "2026-10-11T10:53:37.086948+00:00",
+              "retrieved_at": "2026-10-11T15:07:57.071964+00:00",
               "explicit_relation": true
             }
           ]
@@ -4222,7 +5177,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Kit de filtration ZR903701 | Rowenta",
               "excerpt": "Ref: ZR903701\n\nRO7640EA\n--\nIndisponible\nSilence Force Cyclonic, Aspirateur sans sac, Modèle parquet + 1 an de garantie supplémentaire\nYY5467FE\n--\nIndisponible\nSILENCE FORCE CYCLONIC \"CAR PRO\"\nYY4560FE\n--\nIndisponible\nSilence Force Cyclonic, Aspirateur sans sac, ",
-              "retrieved_at": "2026-10-11T10:53:35.087002+00:00",
+              "retrieved_at": "2026-10-11T15:07:54.629169+00:00",
               "explicit_relation": true
             }
           ]
@@ -4352,7 +5307,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Levoit Core® 300 Series Original Filter | 3-Stage Filtration",
               "excerpt": "Compatible with only: Core 300-P, Core P350-P, Core 300-P-RAC",
-              "retrieved_at": "2026-10-11T10:53:45.266062+00:00",
+              "retrieved_at": "2026-10-11T15:08:06.248795+00:00",
               "explicit_relation": true
             }
           ]
@@ -4369,7 +5324,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Levoit Core® 300-P 4-Stage Smoke Remover Replacement Filter",
               "excerpt": "Compatible with only: Core 300-P, Core 300S-P, Core P350-P",
-              "retrieved_at": "2026-10-11T10:54:01.508133+00:00",
+              "retrieved_at": "2026-10-11T15:08:25.134712+00:00",
               "explicit_relation": true
             }
           ]
@@ -4394,7 +5349,7 @@
               "source_kind": "manufacturer_product_page",
               "source_title": "Levoit Core® 300-P 4-Stage Smoke Remover Replacement Filter",
               "excerpt": "Compatible with only: Core 300-P, Core 300S-P, Core P350-P",
-              "retrieved_at": "2026-10-11T10:54:01.960642+00:00",
+              "retrieved_at": "2026-10-11T15:08:25.358696+00:00",
               "explicit_relation": true
             }
           ]
@@ -4418,6 +5373,34 @@
     {
       "brand": "Levoit",
       "model": "Core 600S",
+      "type": "Purificateur d’air",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Levoit",
+      "model": "LV-H132",
+      "type": "Purificateur d’air",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Levoit",
+      "model": "LV-H133",
+      "type": "Purificateur d’air",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Levoit",
+      "model": "LV-PUR131",
+      "type": "Purificateur d’air",
+      "verified": false,
+      "parts": []
+    },
+    {
+      "brand": "Levoit",
+      "model": "LV-PUR131S",
       "type": "Purificateur d’air",
       "verified": false,
       "parts": []
