@@ -121,6 +121,15 @@ class CatalogValidationTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "Non-manufacturer device proof"):
                     validate_catalog(catalog)
 
+    def test_rejects_embedded_credentials_in_manufacturer_proof(self):
+        catalog = good_catalog()
+        catalog["devices"][0]["parts"][0]["evidence"][0]["source_url"] = (
+            "https://fake-user:fake-password@www.rowenta.fr/example"
+        )
+        with self.assertRaisesRegex(ValueError, "Invalid evidence URL authority"):
+            validate_catalog(catalog)
+
+
 
 if __name__ == "__main__":
     unittest.main()

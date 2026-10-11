@@ -90,6 +90,9 @@ def validate_catalog(catalog: dict) -> list[dict]:
             for e in evidence:
                 if not isinstance(e, dict) or not isinstance(e.get("source_url"), str) or not e["source_url"].startswith("https://"):
                     raise ValueError("Invalid evidence URL")
+                parsed_proof_url = urlsplit(e["source_url"])
+                if not parsed_proof_url.hostname or parsed_proof_url.username or parsed_proof_url.password:
+                    raise ValueError(f"Invalid evidence URL authority: {brand} {model}")
                 # Vacuum and purifier proof must come from the manufacturer itself,
                 # not from an arbitrary HTTPS retailer passing as an official source.
                 manufacturer_hosts = {
