@@ -90,6 +90,17 @@ def validate_catalog(catalog: dict) -> list[dict]:
             for e in evidence:
                 if not isinstance(e, dict) or not isinstance(e.get("source_url"), str) or not e["source_url"].startswith("https://"):
                     raise ValueError("Invalid evidence URL")
+                # Vacuum and purifier proof must come from the manufacturer itself,
+                # not from an arbitrary HTTPS retailer passing as an official source.
+                manufacturer_hosts = {
+                    "rowenta": {"www.rowenta.fr"},
+                    "levoit": {"levoit.com"},
+                }
+                trusted_hosts = manufacturer_hosts.get(brand.strip().casefold())
+                if (trusted_hosts is not None
+                        and e.get("source_kind") in OFFICIAL_EVIDENCE
+                        and urlsplit(e["source_url"]).hostname not in trusted_hosts):
+                    raise ValueError(f"Non-manufacturer device proof: {brand} {model}")
                 # Printer proofs must point to the exact manufacturer's official
                 # domain; a marketplace cannot masquerade as manufacturer evidence.
                 if device.get("type") == "Imprimante":

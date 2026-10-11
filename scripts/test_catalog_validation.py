@@ -96,5 +96,31 @@ class CatalogValidationTests(unittest.TestCase):
             validate_catalog(catalog)
 
 
+    def test_accepts_verified_official_levoit_proof(self):
+        catalog = good_catalog()
+        device = catalog["devices"][0]
+        device.update(brand="Levoit", model="LV-H132", type="Purificateur d’air")
+        device["parts"][0]["manufacturer_part_number"] = "LV-H132-RF"
+        device["parts"][0]["evidence"][0]["source_url"] = (
+            "https://levoit.com/products/lv-h132-air-purifier-replacement-filter"
+        )
+        self.assertEqual(len(validate_catalog(catalog)), 1)
+
+    def test_rejects_non_official_vacuum_and_purifier_proofs(self):
+        for brand, model, kind in (
+            ("Rowenta", "RO7649EA", "Aspirateur"),
+            ("Levoit", "LV-H132", "Purificateur d’air"),
+        ):
+            with self.subTest(brand=brand):
+                catalog = good_catalog()
+                device = catalog["devices"][0]
+                device.update(brand=brand, model=model, type=kind)
+                device["parts"][0]["evidence"][0]["source_url"] = (
+                    "https://retailer.example.com/claim-official-product"
+                )
+                with self.assertRaisesRegex(ValueError, "Non-manufacturer device proof"):
+                    validate_catalog(catalog)
+
+
 if __name__ == "__main__":
     unittest.main()
