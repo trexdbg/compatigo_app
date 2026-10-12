@@ -18,7 +18,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Always build the latest published catalog, even when this workflow was
+      # queued before the catalog-sync bot pushed a newer main commit.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
