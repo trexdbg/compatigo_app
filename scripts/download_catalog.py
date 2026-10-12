@@ -181,6 +181,9 @@ def main() -> None:
         catalog = json.loads(archive.read("catalog.json"))
 
     devices = validate_catalog(catalog)
+    # Keep the exact source run visible in the sync logs for traceability.
+    print(f"Validated agent run {latest['id']} / artifact {artifact['id']} "
+          f"(catalog updated_at={catalog.get('updated_at', 'unknown')})")
     target = Path("public/data/catalog.json")
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
