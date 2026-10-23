@@ -40,11 +40,13 @@ jobs:
             exit 1
           fi
           python scripts/download_catalog.py
+      - name: Record catalogue growth toward 500 verified devices
+        run: python scripts/report_catalog_growth.py
       - name: Commit catalog when changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/catalog.json
+          git add public/data/catalog.json public/data/catalog-growth.csv
           if git diff --cached --quiet; then
             echo "Catalog unchanged"
           else
