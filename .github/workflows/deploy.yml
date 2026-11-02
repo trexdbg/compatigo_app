@@ -1,8 +1,7 @@
 name: Deploy to GitHub Pages
 
+# Projet Compatigo en pause depuis le 02/11/2026 : lancement manuel uniquement.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
