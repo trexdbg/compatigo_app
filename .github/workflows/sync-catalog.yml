@@ -1,13 +1,7 @@
 name: Sync verified catalog
 
+# Projet Compatigo en pause depuis le 02/11/2026 : lancement manuel uniquement.
 on:
-  push:
-    branches: [main]
-    paths:
-      - "scripts/download_catalog.py"
-      - ".github/workflows/sync-catalog.yml"
-  schedule:
-    - cron: "47 5 * * *"
   workflow_dispatch:
 
 permissions:
