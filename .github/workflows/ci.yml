@@ -1,7 +1,8 @@
 name: frontend-ci
+# Projet Compatigo en pause depuis le 02/11/2026 : lancement manuel uniquement.
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
